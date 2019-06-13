@@ -2,7 +2,7 @@
 <html lang="pt-br" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="resources/css/bootstrap.css">
+  <link rel="stylesheet" href="../resources/css/bootstrap.css">
   <title>Compra : Pacotes</title>
 </head>
 <body>

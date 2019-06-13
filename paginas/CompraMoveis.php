@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="resources/css/bootstrap.css">
+  <link rel="stylesheet" href="../resources/css/bootstrap.css">
   <title>Compra : Items</title>
 
   <!-- IMPORTAÇÃO DO JS -->

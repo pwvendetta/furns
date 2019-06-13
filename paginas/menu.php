@@ -2,7 +2,7 @@
 <html lang="pt-br" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="resources/css/bootstrap.css">
+  <link rel="stylesheet" href="../resources/css/bootstrap.css">
   <title>Menu</title>
 
 </head>
@@ -28,16 +28,16 @@
       <!-- Botões -->
       <div class="row">
         <div class="col-md">
-          <a href="inicio.html"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Início</button></a>
+          <a href="index.php"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Início</button></a>
         </div>
         <div class="col-md">
           <button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Comprar</button>
         </div>
         <div class="col-md">
-          <a href="galeria.html"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Galeria</button></a>
+          <a href="index.php?pagina=galeria"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Galeria</button></a>
         </div>
         <div class="col-md">
-          <a href="contato.html"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Contato</button></a>
+          <a href="contato.php?pagina=contato"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Contato</button></a>
         </div>
       </div>
     </div>

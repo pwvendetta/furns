@@ -2,10 +2,10 @@
 <html lang="pt-br" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="resources/css/bootstrap.css">
+  <link rel="stylesheet" href="../resources/css/bootstrap.css">
   <title>Adm Móveis</title>
 
-  <!-- <script src="../JS/jquery-3.4.1.js" charset="utf-8"></script>
+  <script src="resources/js/jquery-3.4.1.js" charset="utf-8"></script>
   <!-- UTILIZAÇÃO DO JavaScript E jQuery -->
   <script>
   $(document).ready( function(){
@@ -100,10 +100,9 @@
         </div>
       </div>
     </div>
-    <!-- style="display : none" -->
-    <br><br><hr class="bg-primary"><br><br>
+    <!-- <br><br><hr class="bg-primary"><br><br> -->
 
-    <div class="row">
+    <div class="row style="display : none"">
       <div class="col-lg">
         <div id="formPacotes" >
           <h3 class="text-warning">Pacotes</h3>
