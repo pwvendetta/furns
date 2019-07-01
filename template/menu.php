@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="../resources/css/bootstrap.css">
-  <title>Menu</title>
-
-</head>
-<body class="bg-black">
   <!-- MENU - INICIO -->
 
     <div class="bg-dark m-0 px-5">
       <!-- Cabeçalho -->
       <div class="row text-white">
         <div class="col-sm-1-12 img">
-          <img src="Chair.png" alt="Ícone" class="img-fluid" width="25px">
+          <img src="./resources/Images/Chair.png" alt="Ícone" class="img-fluid" width="25px">
         </div>
         <div class="col-lg">
           <h2>Furns</h2>
@@ -31,17 +22,17 @@
           <a href="index.php"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Início</button></a>
         </div>
         <div class="col-md">
-          <button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Comprar</button>
+          <a href="index.php?pagina=CompraMoveis"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">$ Móveis</button></a>
         </div>
         <div class="col-md">
-          <a href="index.php?pagina=galeria"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Galeria</button></a>
+          <a href="index.php?pagina=CompraPacotes"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">$ Pacotes</button></a>
         </div>
         <div class="col-md">
-          <a href="contato.php?pagina=contato"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Contato</button></a>
+          <a href="index.php?pagina=Galeria"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Galeria</button></a>
+        </div>
+        <div class="col-md">
+          <a href="index.php?pagina=Contato"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Contato</button></a>
         </div>
       </div>
     </div>
   <!-- MENU - FIM -->
-</div>
-</body>
-</html>

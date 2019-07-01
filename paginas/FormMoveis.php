@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="../resources/css/bootstrap.css">
-  <title>Adm Móveis</title>
+<?php
+$con = conecta();
+$res = mysqli_query ($con, 'SELECT * FROM movel');
 
-  <script src="../resources/js/jquery-3.4.1.js" charset="utf-8"></script>
-  <script src="../resources/js/validacaoFormulario.js" charset="utf-8"></script>
-</head>
-
-
-<body class="bg-black">
+ ?>
   <div class="container bg-dark">
     <h2 class="text-warning">Alteração de Dados</h2>
     <h3 class="text-warning">Móveis</h3>
@@ -75,8 +67,4 @@
 
       </form>
       <br>
-    </div>
-  </div>
-
-</body>
-</html>
+    </div>    </div>

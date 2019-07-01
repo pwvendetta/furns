@@ -107,15 +107,16 @@
           </div>
         </div>
         <!-- DATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASE -->
+        <?php while ($movel = mysqli_fetch_assoc($res)): ?>
             <div class="row">
               <div class="col-sm">
-                <p>ESTILO</p>
+                <p>N</p>
               </div>
               <div class="col-md">
-                <p style=" color : #7f53d2">Clockwork Chair, Reinforced</p>
+                <?php echo $movel['nome']; ?>
               </div>
               <div class="col-md">
-                <p>Clockwork</p>
+<?php echo $movel['estilo']; ?>
               </div>
               <div class="col-md">
                 <p>Dining</p>
@@ -290,18 +291,7 @@
 
 
         </div>
-        <!-- INFO HOVER -->
-        <!-- <div class=" col-sm-1-12 text-center p-2">
-          <div class="" id="teste2" style="display: none">
-          <img src="Images/Items/Clockwork-Control-Panel-Single.jpg" alt="" width="200px" class="border border-5 border-purple rounded">
-          <p>7x Decorative Wax</p>
-          <p>10x Bast</p>
-          <p>3x Mastic</p>
-          <p>2x Culanda Lacquer</p>
-          <p>13x Heartwood</p>
-          </div>
-        </div> -->
-        <!-- FIM INFO HOVER -->
+
 
       </div>
       <!-- DATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASE -->
