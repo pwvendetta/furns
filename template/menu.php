@@ -10,10 +10,10 @@
           <h2>Furns</h2>
         </div>
         <div class="col-sm-1-12">
-          <button type="button" class="btn btn-primary">Login</button>
+        <a href="?pagina=FormMoveis">  <button type="button" class="btn btn-primary">Login</button></a>
         </div>
         <div class="col-sm-1-12">
-          <button type="button" class="btn btn-primary">Registro</button>
+          <a href="?pagina=FormPacotes"> <button type="button" class="btn btn-primary">Registro</button></a>
         </div>
       </div>
       <!-- Botões -->

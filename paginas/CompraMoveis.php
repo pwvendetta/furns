@@ -1,32 +1,32 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="../resources/css/bootstrap.css">
   <title>Compra : Items</title>
 
-  <!-- IMPORTAÇÃO DO JS -->
+  IMPORTAÇÃO DO JS
   <script src=" jquery-3.4.1.js" charset="utf-8"></script>
-  <!-- UTILIZAÇÃO DO JavaScript E jQuery -->
+  UTILIZAÇÃO DO JavaScript E jQuery
   <script>
   $(document).ready( function(){
     $("#teste").click(function() {
-      // alert("batata");
+      alert("batata");
       $("#teste2").show();
-      // $("#teste").click(function() {
-      //   $("#teste2").hide();
-      // });
+      $("#teste").click(function() {
+        $("#teste2").hide();
+      });
     });
 
 
-    // alert("FUNCIONOU!");
+    alert("FUNCIONOU!");
   } );
   </script>
 
 
 
 </head>
-<body class="bg-black">
+<body class="bg-black"> -->
   <div class="container">
 
     <div class="row text-white">
@@ -115,8 +115,8 @@
               <div class="col-md">
                 <?php echo $movel['nome']; ?>
               </div>
+              <?php echo $movel['estilo']; ?>
               <div class="col-md">
-<?php echo $movel['estilo']; ?>
               </div>
               <div class="col-md">
                 <p>Dining</p>
@@ -356,7 +356,7 @@
       <!-- COMFIRMAÇÃO DE COMPRA -->
     </div>
   </div>
-
+<!--
 
 
 
@@ -374,4 +374,4 @@
 
 
 
-</html>
+</html> -->

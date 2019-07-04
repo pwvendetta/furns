@@ -1,6 +1,6 @@
 <?php
 $con = conecta();
-$res = mysqli_query ($con, 'SELECT * FROM movel');
+// $res = mysqli_query ($con, 'SELECT * FROM movel');
 
  ?>
   <div class="container bg-dark">
@@ -8,7 +8,7 @@ $res = mysqli_query ($con, 'SELECT * FROM movel');
     <h3 class="text-warning">Móveis</h3>
 
     <div id="formMoveis">
-      <form class="bg-dark p-2" action="" method="post" id="formulario">
+      <form class="bg-dark p-2" action="controle/insertMoveis.php" method="post" id="formulario">
 
         <label class="text-light">Nome: </label> <input type="text" name="nome" value="" class="form-control obrigatorio">
         <span class="text-danger"></span>
@@ -46,7 +46,7 @@ $res = mysqli_query ($con, 'SELECT * FROM movel');
           </div>
 
           <div class="col-md">
-            <select name="sub-categoria" class="form-control">
+            <select name="subcategoria" class="form-control">
               <option value="">Sub-Categoria</option>
               <option value="1"></option>
             </select>

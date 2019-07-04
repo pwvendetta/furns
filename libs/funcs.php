@@ -7,6 +7,21 @@ function navega($pagina){
     case 'CompraPacotes':
     require 'paginas/CompraPacotes.php';
     break;
+    case 'FormMoveis':
+    require 'paginas/FormMoveis.php';
+    break;
+    case 'FormPacotes':
+    require 'paginas/FormPacotes.php';
+    break;
+    case 'Galeria':
+    require 'paginas/Galeria.php';
+    break;
+    case 'Contato':
+    require 'paginas/Contato.php';
+    break;
+    case 'insertMoveis.php':
+    require 'controle/insertMoveis.php';
+    break;
     default:
     require 'paginas/Inicio.php';
     break;
@@ -14,7 +29,7 @@ function navega($pagina){
 }
 
 function conecta() {
-  return mysqli_connect(HOST,USER,PASS,BANCO);
+  return mysqli_connect('127.0.0.1', 'root', '', 'test');
 }
 
 
