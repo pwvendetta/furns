@@ -8,7 +8,7 @@ function navega($pagina){
     require 'paginas/CompraPacotes.php';
     break;
     case 'FormMoveis':
-    require 'paginas/FormMoveis.php';
+    require 'paginas/FormMoveis2.php';
     break;
     case 'FormPacotes':
     require 'paginas/FormPacotes.php';
@@ -29,7 +29,7 @@ function navega($pagina){
 }
 
 function conecta() {
-  return mysqli_connect('127.0.0.1', 'root', '', 'test');
+  return mysqli_connect('127.0.0.1', 'root', '', 'furns');
 }
 
 
