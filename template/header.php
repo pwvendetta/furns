@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="resources/css/bootstrap.css">
+    <link rel="stylesheet" href="./resources/css/bootstrap.css">
     <title>Furns</title>
 
-    <link rel="stylesheet" type="text/css" href="DataTables-1.10.18/css/jquery.dataTables.min.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="resources/DataTables/dataTables.css"/> -->
 
-    <script type="text/javascript" src="jQuery-3.3.1/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="./resources/js/jquery-3.4.1.jss"></script>
+    <!-- <script type="text/javascript" src="resources/DataTables-1.10.18/js/jquery.dataTables.min.js"></script> -->
 
-    <!-- <link rel="stylesheet" type="text/css" href="./resources/DataTables/datatables.min.css"/>
-    <script type="text/javascript" src="./resources/DataTables/datatables.min.js"></script> -->
-<!--
+    <link rel="stylesheet" type="text/css" href="./resources/DataTables/datatables.css"/>
+    <script type="text/javascript" src="./resources/DataTables/datatables.js"></script>
+
 <script>
 
 
@@ -28,8 +28,7 @@ $(document).ready( function () {
 } );
 
 
-</script> -->
-
+</script>
 
   </head>
 <body class="bg-black">
