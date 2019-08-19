@@ -61,6 +61,41 @@
 </div>
 <script>
 	$(document).ready( function () {
-	  $('#dataTable').DataTable();
+
+	  editor = new $.fn.dataTable.Editor( {
+		table: "#example",
+		fields: [ {
+                label: "Nome:",
+                name: "nome"
+            }, {
+                label: "Estilo:",
+                name: "estilo"
+            }, {
+                label: "Categoria:",
+                name: "categoria"
+            }, {
+                label: "Sub-Categoria:",
+                name: "subcategoria"
+            }, {
+                label: "Preço:",
+                name: "preco"
+            }
+        ]
 	} );
+	
+	
+	
+	
+	
+		  $('#dataTable').DataTable({
+
+			select: true,
+        buttons: [
+            { extend: "create", editor: editor },
+            { extend: "edit",   editor: editor },
+            { extend: "remove", editor: editor }
+        ]
+    
+		  });
+
 </script>

@@ -11,7 +11,7 @@ function navega($pagina){
     require 'paginas/FormMoveis2.php';
     break;
     case 'FormPacotes':
-    require 'paginas/FormMoveis.php';
+    require 'paginas/FormPacotes.php';
     break;
     case 'Galeria':
     require 'paginas/Galeria.php';

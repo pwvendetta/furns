@@ -20,11 +20,7 @@
       <h4 class="text-warning">Conteúdo:</h4>
       <div class="">
 
-        <?php include 'FormPacotesItems.php'
-
-
-        ?>
-
+        <?php include 'FormPacotesItems.php'?>
 
 
       </div>
