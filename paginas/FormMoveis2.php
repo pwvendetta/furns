@@ -9,7 +9,7 @@
 				<th>Qty</th>
 				<th>Name</th>
 				<th>Style</th>
-				<th>Quality</th>
+				<th>Category</th>
 				<th>Sub-Category</th>
 				<th>Price</th>
 			</tr>
@@ -65,7 +65,7 @@
 
 
 
-<!-- <script>
+<script>
 	$(document).ready( function () {
 
     $(function () {
@@ -91,4 +91,4 @@
     });
 });
 	});
-</script> -->
+</script>
