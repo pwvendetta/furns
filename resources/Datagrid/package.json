@@ -1,0 +1,35 @@
+{
+  "name": "quickgrid",
+  "version": "1.0.6",
+  "description": "quick jquery data grid",
+  "main": "dist/quickgrid.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack && webpack-dev-server --open --config webpack.config.js",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulitto/quickgrid.git"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "data grid",
+    "data-grid",
+    "datagrid",
+    "grid"
+  ],
+  "author": "Pavlo Tatarenko",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.20.3",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}

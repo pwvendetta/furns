@@ -13,13 +13,61 @@
     <link rel="stylesheet" type="text/css" href="./resources/DataTables/datatables.css"/>
     <script type="text/javascript" src="./resources/DataTables/datatables.js"></script>
     <script type="text/javascript" src="./resources/DataTables/DataTables/dataTables.bootstrap.js"></script>
-    <script type="text/javascript" src="./resources/DataTables/Editor/js/dataTables.editor.js"></script>
-    <script type="text/javascript" src="./resources/DataTables/Editor/js/editor.bootstrap.js"></script>
+    <!-- <script type="text/javascript" src="./resources/DataTables/Editor/js/dataTables.editor.js"></script>
+    <script type="text/javascript" src="./resources/DataTables/Editor/js/editor.bootstrap.js"></script> -->
 
     <script src="https://cdn.datatables.net/buttons/1.1.0/js/dataTables.buttons.min.js"></script>
     <script src="ttps://cdn.datatables.net/select/1.1.0/js/dataTables.select.min.js"></script>
 
+    <script src="./resources/Daragrid/src/quickgrid.js"></script>
+
+
+
+
 <script>
+
+// $("#myGrid").quickGrid({
+//   data: [
+//     {
+//       property1: "01.02.2017",
+//       property2: ""
+//     },
+//     {
+//       property2: "100",
+//       property1: "02.02.2017"
+//     },
+//     {
+//       property2: "10",
+//       property1: "03.02.2017",
+//       property3: ""
+//     }
+//   ],
+//   columns: {
+//     property1 : {
+//       visible: true,
+//       title: "Date"
+//     },
+//     property2 : {
+//       title: function(key){
+//         return "!!!" + key.charAt(0).toUpperCase() + key.substring(1)  + "!!!";
+//       }
+//     }
+//   },
+// })
+// $("#myGrid").quickGrid({
+//   pagination: {
+//     recordsPerPage: 10, // max records per page
+//     activePage: 0 // initial page
+//   }
+// })
+
+
+
+
+
+
+
+
 
 
 $(document).ready( function () {
@@ -32,6 +80,31 @@ $(document).ready( function () {
       ]
     } );
 } );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </script>

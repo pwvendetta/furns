@@ -48,7 +48,7 @@
 				<td><?php echo $movel['estilo']; ?></td>
 				<td><?php echo $movel['categoria']; ?></td>
 				<td><?php echo $movel['subcategoria']; ?></td>
-				<td><?php echo $movel['preco']; ?></td>
+				<td class="preco"><?php echo $movel['preco']; ?></td>
 
 
 			</tr>
@@ -59,43 +59,36 @@
 <br>
 </div>
 </div>
-<script>
+
+
+<div class="bg-white" id=#myGrid></div>
+
+
+
+<!-- <script>
 	$(document).ready( function () {
 
-	  editor = new $.fn.dataTable.Editor( {
-		table: "#example",
-		fields: [ {
-                label: "Nome:",
-                name: "nome"
-            }, {
-                label: "Estilo:",
-                name: "estilo"
-            }, {
-                label: "Categoria:",
-                name: "categoria"
-            }, {
-                label: "Sub-Categoria:",
-                name: "subcategoria"
-            }, {
-                label: "Preço:",
-                name: "preco"
+    $(function () {
+    $("td.preco").dblclick(function () {
+        var conteudoOriginal = $(this).text();
+         
+        // $(this).addClass("celulaEmEdicao");
+        $(this).html("<input type='text' value='" + conteudoOriginal + "' />");
+        $(this).children().first().focus();
+ 
+        $(this).children().first().keypress(function (e) {
+            if (e.which == 13) {
+                var novoConteudo = $(this).val();
+                $(this).parent().text(novoConteudo);
+                // $(this).parent().removeClass("celulaEmEdicao");
             }
-        ]
-	} );
-	
-	
-	
-	
-	
-		  $('#dataTable').DataTable({
-
-			select: true,
-        buttons: [
-            { extend: "create", editor: editor },
-            { extend: "edit",   editor: editor },
-            { extend: "remove", editor: editor }
-        ]
-    
-		  });
-
-</script>
+        });
+         
+    $(this).children().first().blur(function(){
+        $(this).parent().text(conteudoOriginal);
+        // $(this).parent().removeClass("celulaEmEdicao");
+    });
+    });
+});
+	});
+</script> -->
