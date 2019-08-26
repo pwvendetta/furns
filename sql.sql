@@ -134,3 +134,7 @@ INSERT INTO `venda` (`idVenda`, `data`, `idUsuario`) VALUES (NULL, '2019-08-06',
 
 INSERT INTO `pacotevenda` (`idVenda`, `idPacote`, `quantidade`) VALUES ('1', '1', '1');
 INSERT INTO `movelvenda` (`idVenda`, `idMovel`, `quantidade`) VALUES ('2', '3', '2');
+
+
+ALTER TABLE `movel` ADD `imagem` VARCHAR(9999) NOT NULL AFTER `subcategoria`;
+

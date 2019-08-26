@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="../resources/css/bootstrap.css">
-
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
     <div class="row border border-black py-2 rounded-sm">
       <div class="col-md-1">
       </div>
@@ -24,5 +15,11 @@
         <button type="button" class="btn btn-primary">-</button>
       </div>
     </div>
-  </body>
-</html>
+<!-- <script>
+  function afterText() {
+    object.onclick = function(){myScript};
+    <?php include 'FormPacotesItems.php'?>
+
+  }
+  </script> -->
+    

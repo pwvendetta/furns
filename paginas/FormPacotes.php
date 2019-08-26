@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../resources/css/bootstrap.css">
+  <title>Inicio</title>
+</head>
+<body class="bg-black">
   <div class="container bg-dark">
     <h2 class="text-warning">Alteração de Dados</h2>
     <h3 class="text-warning">Pacotes</h3>
@@ -6,7 +14,7 @@
       <label class="text-light">Nome: </label> <input type="text" name="nome" value="" class="form-control obrigatorio">
       <span class="text-danger"></span><br>
       <label class="text-light">Preço: </label> <input type="number" name="preco" value="" class="form-control"><br>
-      <label class="text-light">Imagem </label> <input type="file" name="imagem" value="" class="form-control"><br>
+      <label class="text-light">Imagem </label> <input type="text" name="imagem" value="" class="form-control"><br>
 
       <select name="estilo" class="form-control">
         <option value="">Estilo</option>
@@ -21,7 +29,6 @@
       <div class="">
 
         <?php include 'FormPacotesItems.php'?>
-
 
       </div>
       <hr class="bg-warning">
@@ -40,3 +47,5 @@
   </div>
 
 </div>
+</body>
+</html>

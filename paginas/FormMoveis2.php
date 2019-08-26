@@ -9,7 +9,7 @@
 				<th>Qty</th>
 				<th>Name</th>
 				<th>Style</th>
-				<th>Quality</th>
+				<th>Category</th>
 				<th>Sub-Category</th>
 				<th>Price</th>
 			</tr>
@@ -168,7 +168,10 @@
 <script src="./resources/js/validacaoFormulario.js"></script>
 
 
+<<<<<<< HEAD
 <!-- 
+=======
+>>>>>>> ef09501d79a9de27a7495a66d8204e6227d74d7a
 <script>
 	$(document).ready( function () {
 
@@ -185,6 +188,7 @@ function productUpdate() {
 }
 
 	});
+<<<<<<< HEAD
 
   function formClear() {
   $("#productname").val("");
@@ -206,3 +210,6 @@ function productsAdd() {
 
 
 </script> -->
+=======
+</script>
+>>>>>>> ef09501d79a9de27a7495a66d8204e6227d74d7a
