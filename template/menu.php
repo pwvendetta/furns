@@ -10,11 +10,11 @@
           <h2>Furns</h2>
         </div>
         <div class="col-sm-1-12">
-        <a href="?pagina=FormMoveis">  <button type="button" class="btn btn-primary">Login</button></a>
+        <a href="?pagina=FormMoveis">  <button type="button" class="btn btn-primary">Cadastrar Móveis (provisorio)</button></a>
         </div>
-        <div class="col-sm-1-12">
+        <!-- <div class="col-sm-1-12">
           <a href="?pagina=FormPacotes"> <button type="button" class="btn btn-primary">Registro</button></a>
-        </div>
+        </div> -->
       </div>
       <!-- Botões -->
       <div class="row">
