@@ -20,7 +20,7 @@ $con = conecta();
 
         <div class="row">
           <div class="col-md">
-            <select name="estilo" class="form-control obrigatorio">
+            <select name="qualidade" class="form-control obrigatorio">
               <option value="">Qualidade</option>
               <option value="1">Normal</option>
               <option value="2" class="text-success">Fine</option>
