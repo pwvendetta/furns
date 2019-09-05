@@ -12,6 +12,8 @@
 				<th>Category</th>
 				<th>Sub-Category</th>
 				<th>Price</th>
+        <!-- <th>Edit</th> -->
+        <th>Delete</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -49,7 +51,9 @@
 				<td><?php echo $movel['categoria']; ?></td>
 				<td><?php echo $movel['subcategoria']; ?></td>
 				<td class="preco"><?php echo $movel['preco']; ?></td>
+        
 
+        <td class="text-center"> <a href="?paginas=deleteMovel&id=<?php echo $movel['idMovel']?> "> <button type='button' class='btn btn-default '> <span class='glyphicon glyphicon-remove'>X</span></button> </a></td>
 
 			</tr>
 			<?php endwhile; ?>
@@ -166,50 +170,3 @@
 
 
 <script src="./resources/js/validacaoFormulario.js"></script>
-
-
-<<<<<<< HEAD
-<!-- 
-=======
->>>>>>> ef09501d79a9de27a7495a66d8204e6227d74d7a
-<script>
-	$(document).ready( function () {
-
-function productUpdate() {
-  if ($("#productname").val() != null &&
-      $("#productname").val() != '') {
-    // Add product to Table
-    productAddToTable();
-    // Clear form fields
-    formClear();
-    // Focus to product name field
-    $("#productname").focus();
-  }
-}
-
-	});
-<<<<<<< HEAD
-
-  function formClear() {
-  $("#productname").val("");
-  $("#introdate").val("");
-  $("#url").val("");
-}
-
-
-function productsAdd() {
-  $("#productTable tbody").append(
-      "<tr>" +
-        "<td>My First Video</td>" +
-        "<td>6/11/2015</td>" +
-        "<td>www.pluralsight.com</td>" +
-      "</tr>"
-  );
-}
-
-
-
-</script> -->
-=======
-</script>
->>>>>>> ef09501d79a9de27a7495a66d8204e6227d74d7a

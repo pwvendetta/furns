@@ -138,3 +138,9 @@ INSERT INTO `movelvenda` (`idVenda`, `idMovel`, `quantidade`) VALUES ('2', '3', 
 
 ALTER TABLE `movel` ADD `imagem` VARCHAR(9999) NOT NULL AFTER `subcategoria`;
 
+
+UPDATE `movel` SET `Imagem` = 'https://eso.mmo-fashion.com/wp-content/uploads/sites/2/2018/05/High-Elf-Bread-Basket-Wrought-Iron.jpg' WHERE `movel`.`idMovel` = 1;
+UPDATE `movel` SET `Imagem` = 'https://eso.mmo-fashion.com/wp-content/uploads/sites/2/2017/02/Bread-Braided.jpg' WHERE `movel`.`idMovel` = 2;
+UPDATE `movel` SET `Imagem` = 'https://eso.mmo-fashion.com/wp-content/uploads/sites/2/2017/02/Bread-Hearty-Loaf.jpg' WHERE `movel`.`idMovel` = 3;
+UPDATE `movel` SET `Imagem` = 'https://eso.mmo-fashion.com/wp-content/uploads/sites/2/2017/02/Hearty-Bread.jpg' WHERE `movel`.`idMovel` = 4;
+

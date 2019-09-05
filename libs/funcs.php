@@ -19,8 +19,14 @@ function navega($pagina){
     case 'Contato':
     require 'paginas/Contato.php';
     break;
-    case 'insertMoveis.php':
+    case 'insertMoveis':
     require 'controle/insertMoveis.php';
+    break;
+    case 'updateMoveis':
+    require 'controle/updateMoveis.php';
+    break;
+    case 'deleteMovel':
+    require 'controle/deleteMovel.php';
     break;
     default:
     require 'paginas/Inicio.php';
