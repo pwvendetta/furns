@@ -1,17 +1,26 @@
 <?php
-require '../libs/funcs.php';
+$idMovel = trim($_POST['idMovel']);
 $nome = trim($_POST['nome']);
-$preço = $_POST['preco'];
+$preco = $_POST['preco'];
 $imagem = trim($_POST['imagem']);
 $qualidade = $_POST['qualidade'];
 $estilo = $_POST['estilo'];
 $categoria = $_POST['categoria'];
 $subcategoria = $_POST['subcategoria'];
 
-$con = conecta();
-$insert = "insert into movel (nome, preco, qualidade, estilo, categoria, subcategoria, imagem)
- values ('$nome', '$preço', '$qualidade', '$estilo', '$categoria', '$subcategoria', '$imagem')";
-$res = mysqli_query($con, $insert);
 
-if ($res){echo "sucesso";}else{echo "falha";}
- ?>
+
+//Gravando os dados no BD
+$con = conecta();
+$update = "update movel set nome='$nome', preco='$preco', qualidade='$qualidade', estilo='$estilo', 
+categoria='$categoria', subcategoria ='$subcategoria', imagem='$imagem'  where idMovel=$idMovel";
+
+
+$res = mysqli_query($con, $update);
+
+if ($res){
+  echo "Movel alterado com sucesso!";
+} else {
+  echo "Movel não alterado!";
+}
+?>

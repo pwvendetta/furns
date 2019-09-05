@@ -8,17 +8,17 @@ $movel = mysqli_fetch_assoc($res);
     <tr> <td colspan="2" align='center'> Update </td></tr>
     <form action="?pagina=updateMovelControl" method="post">
     <tr>
-        <td width="80 px"> Nome: </td>
+        <td width="120px"> Nome: </td>
         <td> <input id="nome" name="nome" type="text"
              value="<?php echo $movel['nome'];?>" required> </td>
     </tr>
     <tr>
-        <td width="80 px"> Preço: </td>
+        <td width="120px"> Preço: </td>
         <td> <input id="preco" name="preco" type="number"
              value="<?php echo $movel['preco'];?>" required> </td>
     </tr>
     <tr>
-        <td width="80 px"> Estilo: </td>
+        <td width="120px"> Estilo: </td>
         <td> 
         <select name="estilo" class="form-control">
         <option value="">Estilo</option>
@@ -53,7 +53,7 @@ $movel = mysqli_fetch_assoc($res);
      </td>
     </tr>
     <tr>
-        <td width="80 px"> Categoria: </td>
+        <td width="120px"> Categoria: </td>
         <td> 
         <select name="categoria" class="form-control">
       <option value="">Categoria</option>
@@ -75,7 +75,19 @@ $movel = mysqli_fetch_assoc($res);
     </tr>
     
     <tr>
-        <td width="80 px"> Qualidade: </td>
+  
+    <td width="120px"> Sub-Categoria: </td>
+    <td>
+    <select name="subcategoria" class="form-control">
+      <option value="">Sub-Categoria</option>
+        <!-- https://eso.mmo-fashion.com/furnishings-by-type/ -->
+    </select>
+    </td>
+    </tr>
+
+
+    <tr>
+        <td width="120px"> Qualidade: </td>
         <td> 
         <select name="qualidade" class="form-control">
       <option value="">Qualidade</option>
@@ -89,18 +101,19 @@ $movel = mysqli_fetch_assoc($res);
     </tr>
 
     <tr>
-        <td width="80 px"> Imagem: </td>
+        <td width="120px"> Imagem: </td>
         <td> <input id="imagem" name="imagem" type="text"
              value="<?php echo $movel['Imagem'];?>" required> </td>
     </tr>
 
-
+    <input id="idMovel" name="idMovel" value="<?php echo $movel['idMovel'];?>"
+          type="hidden" >
 
 
     <tr align="center">
         <td>
-          <input id="idest" name="idest" value="<?php echo $estado['idest'];?>"
-          type="hidden" >
+          <!-- <input id="idMovel" name="idMovel" value="<?php echo $movel['idMovel'];?>"
+          type="hidden" > -->
           <button type="submit">Salvar</button>
         </td>
         <td> <button type="reset">Cancelar</button> </td>
