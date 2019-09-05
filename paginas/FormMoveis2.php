@@ -52,8 +52,8 @@
 				<td><?php echo $movel['subcategoria']; ?></td>
 				<td class="preco"><?php echo $movel['preco']; ?></td>
         
-
-        <td class="text-center"> <a href="?paginas=deleteMovel&id=<?php echo $movel['idMovel']?> "> <button type='button' class='btn btn-default '> <span class='glyphicon glyphicon-remove'>X</span></button> </a></td>
+        <td class="text-center"> <a href="?pagina=updateMovel&idMovel=<?php echo $movel['idMovel'];?> "> <button type='button' class='btn btn-default '> ! </button> </a></td>
+        <td class="text-center"> <a href="?pagina=deleteMovel&idMovel=<?php echo $movel['idMovel'];?> "> <button type='button' class='btn btn-default '> X </button> </a></td>
 
 			</tr>
 			<?php endwhile; ?>

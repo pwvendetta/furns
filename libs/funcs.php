@@ -22,8 +22,11 @@ function navega($pagina){
     case 'insertMoveis':
     require 'controle/insertMoveis.php';
     break;
-    case 'updateMoveis':
-    require 'controle/updateMoveis.php';
+    case 'updateMovel':
+    require 'paginas/updateMovel.php';
+    break;
+    case 'updateMovelControl':
+    require 'controle/updateMovelControl.php';
     break;
     case 'deleteMovel':
     require 'controle/deleteMovel.php';
