@@ -1,32 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="../resources/css/bootstrap.css">
-  <title>Compra : Items</title>
-
-  IMPORTAÇÃO DO JS
-  <script src=" jquery-3.4.1.js" charset="utf-8"></script>
-  UTILIZAÇÃO DO JavaScript E jQuery
-  <script>
-  $(document).ready( function(){
-    $("#teste").click(function() {
-      alert("batata");
-      $("#teste2").show();
-      $("#teste").click(function() {
-        $("#teste2").hide();
-      });
-    });
-
-
-    alert("FUNCIONOU!");
-  } );
-  </script>
-
-
-
-</head>
-<body class="bg-black"> -->
   <div class="container">
 
     <div class="row text-white">
@@ -83,221 +54,76 @@
     </div>
     <!-- FIM FILTROS -->
     <!-- TABELA SELECIONAR ITEMS  -->
-    <div class="container bg-dark my-2 text-white py-2">
-      <div class="row ">
-        <div class="col-lg">
-        <div class="row text-warning">
-          <div class="col-sm">
-            <p>QTY</p>
-          </div>
-          <div class="col-lg">
-            <p>NOME</p>
-          </div>
-          <div class="col-sm">
-            <p>ESTILO</p>
-          </div>
-          <div class="col-sm">
-            <p>CATEGORIA</p>
-          </div>
-          <div class="col-sm">
-            <p>SUB-CATEGORIA</p>
-          </div>
-          <div class="col-sm">
-            <p>PREÇO</p>
-          </div>
-        </div>
-        <!-- DATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASE -->
-        <?php while ($movel = mysqli_fetch_assoc($res)): ?>
-            <div class="row">
-              <div class="col-sm">
-                <p>N</p>
-              </div>
-              <div class="col-md">
-                <?php echo $movel['nome']; ?>
-              </div>
-              <?php echo $movel['estilo']; ?>
-              <div class="col-md">
-              </div>
-              <div class="col-md">
-                <p>Dining</p>
-              </div>
-              <div class="col-md">
-                <p>Chairs</p>
-              </div>
-              <div class="col-md">
-                <p>PREÇO</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                <p>ESTILO</p>
-              </div>
-              <div class="col-lg">
-                <p>Clockwork Chair, Practical</p>
-              </div>
-              <div class="col-sm">
-                <p>Clockwork</p>
-              </div>
-              <div class="col-sm">
-                <p>Dining</p>
-              </div>
-              <div class="col-sm">
-                <p>Chairs</p>
-              </div>
-              <div class="col-sm">
-                <p>PREÇO</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                <p>ESTILO</p>
-              </div>
-              <div class="col-lg">
-                <p>Clockwork Stool, Practical</p>
-              </div>
-              <div class="col-sm">
-                <p>Clockwork</p>
-              </div>
-              <div class="col-sm">
-                <p>Workshop</p>
-              </div>
-              <div class="col-sm">
-                <p>Stools</p>
-              </div>
-              <div class="col-sm">
-                <p>PREÇO</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                <p>ESTILO</p>
-              </div>
-              <div class="col-lg">
-                <p>Clockwork Vent, Octagonal Fan</p>
-              </div>
-              <div class="col-sm">
-                <p>Clockwork</p>
-              </div>
-              <div class="col-sm">
-                <p>Workshop</p>
-              </div>
-              <div class="col-sm">
-                <p>Machinery</p>
-              </div>
-              <div class="col-sm">
-                <p>PREÇO</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                <p>ESTILO</p>
-              </div>
-              <div class="col-lg">
-                <p>Clockwork Switch, Sturdy</p>
-              </div>
-              <div class="col-sm">
-                <p>Clockwork</p>
-              </div>
-              <div class="col-sm">
-                <p>Workshop</p>
-              </div>
-              <div class="col-sm">
-                <p>Machinery</p>
-              </div>
-              <div class="col-sm">
-                <p>PREÇO</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                <p>ESTILO</p>
-              </div>
-              <div class="col-lg">
-                <p>Clockwork Control Panel, Single</p>
-              </div>
-              <div class="col-sm">
-                <p>Clockwork</p>
-              </div>
-              <div class="col-sm">
-                <p>Workshop</p>
-              </div>
-              <div class="col-sm">
-                <p>Machinery</p>
-              </div>
-              <div class="col-sm">
-                <p>PREÇO</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                <p>ESTILO</p>
-              </div>
-              <div class="col-lg">
-                <p>Clockwork Crate, Large Open</p>
-              </div>
-              <div class="col-sm">
-                <p>Clockwork</p>
-              </div>
-              <div class="col-sm">
-                <p>Workshop</p>
-              </div>
-              <div class="col-sm">
-                <p>Cargo</p>
-              </div>
-              <div class="col-sm">
-                <p>PREÇO</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                <p>ESTILO</p>
-              </div>
-              <div class="col-lg">
-                <p>Clockwork Crate, Large Closed</p>
-              </div>
-              <div class="col-sm">
-                <p>Clockwork</p>
-              </div>
-              <div class="col-sm">
-                <p>Workshop</p>
-              </div>
-              <div class="col-sm">
-                <p>Cargo</p>
-              </div>
-              <div class="col-sm">
-                <p>PREÇO</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                <p>ESTILO</p>
-              </div>
-              <div class="col-lg">
-                <p>Clockwork Barrel, Sealed</p>
-              </div>
-              <div class="col-sm">
-                <p>Clockwork</p>
-              </div>
-              <div class="col-sm">
-                <p>Workshop</p>
-              </div>
-              <div class="col-sm">
-                <p>Cargo</p>
-              </div>
-              <div class="col-sm">
-                <p>PREÇO</p>
-              </div>
-            </div>
+    	<div class="bg-light p-3 pr-5">
 
+    <table class="display container" id="datatable">
+			<thead>
+				<tr>
+					<!-- <th>Qty</th> -->
+          <th>Qty</th>
+					<th>Name</th>
+					<th>Style</th>
+					<th>Category</th>
+					<th>Sub-Category</th>
+					<th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php
+				$con = conecta();
+				$res = mysqli_query ($con, 'SELECT * FROM movel');
+				while ($movel = mysqli_fetch_assoc($res)):?>
+				<tr
+        
+					<?php
+      
+      switch ($movel['qualidade']) {
+        case '1':
+        ?>  style= 'background-color: #c2c2c2' 
+					<?php
+          break;
+        case '2':
+        ?>  style= 'background-color:#9cfca8' 
+					<?php
+        break;
+        case '3':
+        ?>  style= 'background-color: #7d6ff5' 
+					<?php
+          break;
+        case '4':
+        ?>  style= 'background-color: #e97dff' 
+					<?php
+          break;
+        case '5':
+        ?>  style= 'background-color: #eeee77' 
+					<?php
+          break;
+      }
+      ?>
+      >
+					<td style="text-align: center;"><input style="text-align: center;" type="number"></td>
+					<td>
+						<?php echo $movel['nome']; ?>
+					</td>
+					<td>
+						<?php echo $movel['estilo']; ?>
+					</td>
+					<td>
+						<?php echo $movel['categoria']; ?>
+					</td>
+					<td>
+						<?php echo $movel['subcategoria']; ?>
+					</td>
+					<td class="preco">
+						<?php echo $movel['preco']; ?>
+					</td>
 
-        </div>
-
-
-      </div>
-      <!-- DATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASEDATABASE -->
-
+				</tr>
+				<?php endwhile; ?>
+			</tbody>
+		</table>
     </div>
-<!-- FIM TABELA DE SELECIONAR ITEMS -->
+    <!-- FIM TABELA DE SELECIONAR ITEMS -->
     <div class="row my-2 mx-1">
       <!-- TABELA ITEMS SELECIONADOS -->
       <div class="col-lg md-5 bg-dark text-white py-2 mr-0">

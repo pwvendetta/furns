@@ -21,54 +21,12 @@
 
     <script src="./resources/Daragrid/src/quickgrid.js"></script>
 
+    <link href="./resources/js/imgal.min.css" rel="stylesheet">
+    <script src="./resources/js/imgal.js"></script>  
 
 
 
 <script>
-
-// $("#myGrid").quickGrid({
-//   data: [
-//     {
-//       property1: "01.02.2017",
-//       property2: ""
-//     },
-//     {
-//       property2: "100",
-//       property1: "02.02.2017"
-//     },
-//     {
-//       property2: "10",
-//       property1: "03.02.2017",
-//       property3: ""
-//     }
-//   ],
-//   columns: {
-//     property1 : {
-//       visible: true,
-//       title: "Date"
-//     },
-//     property2 : {
-//       title: function(key){
-//         return "!!!" + key.charAt(0).toUpperCase() + key.substring(1)  + "!!!";
-//       }
-//     }
-//   },
-// })
-// $("#myGrid").quickGrid({
-//   pagination: {
-//     recordsPerPage: 10, // max records per page
-//     activePage: 0 // initial page
-//   }
-// })
-
-
-
-
-
-
-
-
-
 
 $(document).ready( function () {
   $('#datatable')
@@ -80,33 +38,6 @@ $(document).ready( function () {
       ]
     } );
 } );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </script>
 
   </head>
