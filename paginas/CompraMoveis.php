@@ -4,7 +4,7 @@
       <h1>Compra: Items</h1>
     </div>
     <!-- FILTROS -->
-    <div class="container  my-2 py-2 bg-dark text-primary ">
+    <!-- <div class="container  my-2 py-2 bg-dark text-primary ">
       <h5>Filtros:</h5>
       <div class="row">
         <div class="col-sm">
@@ -51,7 +51,7 @@
         </div>
 
       </div>
-    </div>
+    </div> -->
     <!-- FIM FILTROS -->
     <!-- TABELA SELECIONAR ITEMS  -->
     	<div class="bg-light p-3 pr-5">

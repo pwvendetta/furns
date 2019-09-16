@@ -8,7 +8,7 @@
     <div class="imgal-container">
 
 	<?php
-				$con = conecta();
+				$con = mysqli_connect('127.0.0.1', 'root', '', 'furns');
 				$res = mysqli_query ($con, 'SELECT * FROM movel');
 				while ($movel = mysqli_fetch_assoc($res)):?>
     <img src="<?php echo $movel['imagem']; ?>" weight="211px" height="180px" alt="<?php echo $movel['nome']; ?>" class="imgal-img">

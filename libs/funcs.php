@@ -36,7 +36,7 @@ function navega($pagina){
     break;
   }
 }
-
+ 
 function conecta() {
   return mysqli_connect('127.0.0.1', 'root', '', 'furns');
 }

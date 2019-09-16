@@ -11,7 +11,7 @@ $subcategoria = $_POST['subcategoria'];
 
 
 //Gravando os dados no BD
-$con = conecta();
+$con = mysqli_connect('127.0.0.1', 'root', '', 'furns');
 $update = "update movel set nome='$nome', preco='$preco', qualidade='$qualidade', estilo='$estilo', 
 categoria='$categoria', subcategoria ='$subcategoria', imagem='$imagem'  where idMovel=$idMovel";
 

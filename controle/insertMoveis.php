@@ -8,7 +8,7 @@ $estilo = $_POST['estilo'];
 $categoria = $_POST['categoria'];
 $subcategoria = $_POST['subcategoria'];
 
-$con = conecta();
+$con = mysqli_connect('127.0.0.1', 'root', '', 'furns');
 $insert = "insert into movel (nome, preco, qualidade, estilo, categoria, subcategoria, imagem)
  values ('$nome', '$preco', '$qualidade', '$estilo', '$categoria', '$subcategoria', '$imagem')";
  

@@ -4,8 +4,8 @@ $con = conecta();
 $res = mysqli_query($con, "SELECT * FROM movel WHERE idMovel=$idMovel");
 $movel = mysqli_fetch_assoc($res);
  ?>
-<table border="0" cellpadding=0 cellspacing=0>
-    <tr> <td colspan="2" align='center'> Update </td></tr>
+<table class="text-primary" border="0" cellpadding=0 cellspacing=0>
+    <tr> <td colspan="2" align='center'><h3 class="text-warning">Update</h3>  </td></tr>
     <form action="?pagina=updateMovelControl" method="post">
     <tr>
         <td width="120px"> Nome: </td>
@@ -103,7 +103,7 @@ $movel = mysqli_fetch_assoc($res);
     <tr>
         <td width="120px"> Imagem: </td>
         <td> <input id="imagem" name="imagem" type="text"
-             value="<?php echo $movel['Imagem'];?>" required> </td>
+             value="<?php echo $movel['imagem'];?>" required> </td>
     </tr>
 
     <input id="idMovel" name="idMovel" value="<?php echo $movel['idMovel'];?>"
@@ -112,8 +112,7 @@ $movel = mysqli_fetch_assoc($res);
 
     <tr align="center">
         <td>
-          <!-- <input id="idMovel" name="idMovel" value="<?php echo $movel['idMovel'];?>"
-          type="hidden" > -->
+
           <button type="submit">Salvar</button>
         </td>
         <td> <button type="reset">Cancelar</button> </td>
