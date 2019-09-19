@@ -2,8 +2,11 @@
 <html lang="pt-br" dir="ltr">
 <head>
     <meta charset="utf-8">
+
+
     <link rel="stylesheet" href="./resources/css/bootstrap.css">
-    <title>Furns</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>Furns</title>
 
     <!-- <link rel="stylesheet" type="text/css" href="resources/DataTables/dataTables.css"/> -->
 
@@ -24,6 +27,7 @@
     <link href="./resources/js/imgal.min.css" rel="stylesheet">
     <script src="./resources/js/imgal.js"></script>  
 
+    
 
 
 <script>

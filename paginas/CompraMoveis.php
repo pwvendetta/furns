@@ -66,6 +66,8 @@
 					<th>Category</th>
 					<th>Sub-Category</th>
 					<th>Price</th>
+          <th>View</th>
+
 				</tr>
 			</thead>
 			<tbody>
@@ -117,7 +119,11 @@
 					<td class="preco">
 						<?php echo $movel['preco']; ?>
 					</td>
-
+					<td class="text-center">
+						<a href="">
+            <button type='button' class='btn btn-default '> <i class="material-icons">visibility</i> </button>
+						</a>
+					</td>
 				</tr>
 				<?php endwhile; ?>
 			</tbody>
