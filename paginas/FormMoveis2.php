@@ -68,8 +68,7 @@
 					</td>
 					<td class="text-center">
 						<a href="
-						<!-- <?php include 'updateMovel.php'?> -->
-						<!-- ?pagina=updateMovel&idMovel=<?php echo $movel['idMovel'];?>  -->
+						?pagina=updateMovel&idMovel=<?php echo $movel['idMovel'];?> 
 						">
 							<button type='button' class='btn btn-default '> <i class="material-icons">create</i></button>
 						</a>
