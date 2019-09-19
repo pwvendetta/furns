@@ -1,10 +1,15 @@
 <?php
 $idMovel = trim($_GET['idMovel']);
-$con = conecta();
+$con = conecta();  
 $res = mysqli_query($con, "SELECT * FROM movel WHERE idMovel=$idMovel");
 $movel = mysqli_fetch_assoc($res);
  ?>
-<table class="text-primary" border="0" cellpadding=0 cellspacing=0>
+
+<div class="container bg-dark">
+	<h2 class="text-warning">Alteração de Dados</h2>
+	<h3 class="text-warning">Móveis</h3>
+	<div class="bg-light p-3">
+<table class="" border="0" cellpadding=0 cellspacing=0>
     <tr> <td colspan="2" align='center'><h3 class="text-warning">Update</h3>  </td></tr>
     <form action="?pagina=updateMovelControl" method="post">
     <tr>
@@ -119,3 +124,5 @@ $movel = mysqli_fetch_assoc($res);
     </tr>
   </form>
 </table>
+</div>
+												</div>

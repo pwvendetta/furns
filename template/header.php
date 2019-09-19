@@ -26,8 +26,10 @@
 
     <link href="./resources/js/imgal.min.css" rel="stylesheet">
     <script src="./resources/js/imgal.js"></script>  
+<!-- modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
-    
 
 
 <script>

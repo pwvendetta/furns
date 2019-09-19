@@ -18,7 +18,7 @@ $movel = mysqli_fetch_assoc($res);
         <td>
           <input id="idMovel" name="idMovel" value="<?php echo $movel['idMovel'];?>"
           type="hidden" >
-          <button type="submit">Confirma Excluir</button>
+          <button type="submit">Excluir</button>
         </td>
         <td> <button type="reset">Cancelar</button> </td>
     </tr>

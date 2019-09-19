@@ -7,8 +7,13 @@ $delete = "delete from movel where idMovel=$idMovel";
 $res = mysqli_query($con, $delete);
 
 if ($res){
-    echo "Móvel excluído com sucesso!";
+  ?> <h2 class="text-warning"> <?php echo "Móvel excluído!";?> 
+  </h2><?php
   } else {
-    echo "Móvel não foi excluido!";
-  }
+    ?> <h2 class="text-warning"> <?php echo "Móvel não excluído!";?> 
+    </h2><?php  }
 ?>
+
+<div class="col-sm-1-12">
+        <a href="?pagina=FormMoveis">  <button type="button" class="btn btn-primary">Retornar</button></a>
+        </div>

@@ -11,14 +11,14 @@
 
 
       <div class="col-md-2 text-right">
-        <button type="button" class="btn btn-primary">+</button>
-        <button type="button" class="btn btn-primary">-</button>
+        <button type="button" onclick=" <?php //include 'FormPacotesItems.php'?>" class="btn btn-primary">+</button>
+        <button type="button" class="btn btn-primary">X</button>
       </div>
     </div>
 <!-- <script>
   function afterText() {
     object.onclick = function(){myScript};
-    <?php include 'FormPacotesItems.php'?>
+    <?php //include 'FormPacotesItems.php'?>
 
   }
   </script> -->

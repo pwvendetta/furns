@@ -3,12 +3,16 @@
     <div class="bg-dark m-0 px-5">
       <!-- Cabeçalho -->
       <div class="row text-white">
+
+     
         <div class="col-sm-1-12 img">
-          <img src="./resources/Images/Chair.png" alt="Ícone" class="img-fluid" width="25px">
+        <a href="index.php"><img src="./resources/Images/Chair.png" alt="Ícone" class="img-fluid" width="25px">        </a>
         </div>
         <div class="col-lg">
-          <h1 class="text-warning">Furns</h1>
+        <a href="index.php"><h1 class="text-warning">Furns</h1></a>
         </div>
+
+
         <div class="col-sm-1-12">
         <a href="?pagina=FormMoveis">  <button type="button" class="btn btn-primary">Login</button></a>
         </div>

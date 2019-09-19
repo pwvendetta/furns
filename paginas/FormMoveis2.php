@@ -1,7 +1,21 @@
+<!-- MODAL -->
+<!-- <div class="modal" id="modalImage">
+		<img src="<?php// $movel['imagem']; ?>"  alt="<?php //echo $movel['imagem']; ?>">
+<a href="modal:close">X</a>
+</div> -->
+
+
+
+
 <div class="container bg-dark">
 	<h2 class="text-warning">Alteração de Dados</h2>
 	<h3 class="text-warning">Móveis</h3>
 	<div class="bg-light p-3">
+
+
+
+
+
 		<table class="display container" id="datatable">
 			<thead>
 				<tr>
@@ -22,6 +36,7 @@
 				$con = conecta();
 				$res = mysqli_query ($con, 'SELECT * FROM movel');
 				while ($movel = mysqli_fetch_assoc($res)):?>
+							
 				<tr
         
 					<?php
@@ -51,6 +66,7 @@
       ?>
       >
 					<!-- <td style="text-align: center;"><input style="text-align: center;" type="number"></td> -->
+
 					<td>
 						<?php echo $movel['nome']; ?>
 					</td>
@@ -67,10 +83,7 @@
 						<?php echo $movel['preco']; ?>
 					</td>
 					<td class="text-center">
-						<a href="
-						<!-- <?php include 'updateMovel.php'?> -->
-						<!-- ?pagina=updateMovel&idMovel=<?php echo $movel['idMovel'];?>  -->
-						">
+					<a href="?pagina=updateMovel&idMovel=<?php echo $movel['idMovel'];?> ">
 							<button type='button' class='btn btn-default '> <i class="material-icons">create</i></button>
 						</a>
 					</td>
@@ -81,14 +94,66 @@
 						</a>
 					</td>
 					<td class="text-center">
-						<a href="">
+					<a href="#modalImage" rel="modal:open">
 							<button type='button' class='btn btn-default '> <i class="material-icons">visibility</i> </button>
 						</a>
+
 					</td>
+
 				</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				<?php endwhile; ?>
 			</tbody>
 		</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	</div>
 
 
