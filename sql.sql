@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 16-Set-2019 às 15:42
+-- Generation Time: 23-Set-2019 às 14:56
 -- Versão do servidor: 10.1.40-MariaDB
 -- versão do PHP: 7.3.5
 
@@ -45,28 +45,13 @@ CREATE TABLE `movel` (
 
 INSERT INTO `movel` (`idMovel`, `nome`, `preco`, `estilo`, `categoria`, `qualidade`, `subcategoria`, `imagem`) VALUES
 (1, 'Alinor Bread Basket, Wrought Iron', 2000, 'Alinor', 'Hearth', 1, 'Baskets and Bags', 'https://eso.mmo-fashion.com/wp-content/uploads/sites/2/2018/05/High-Elf-Bread-Basket-Wrought-Iron.jpg'),
-(2, 'Bread, Braided', 2000, 'Common', 'Hearth', 2, 'Breads and Desserts', 'https://eso.mmo-fashion.com/wp-content/uploads/sites/2/2017/02/Bread-Braided.jpg'),
-(3, 'Bread, Hearty Loaves', 2000, 'Common', 'Hearth', 3, 'Breads and Desserts', 'https://eso.mmo-fashion.com/wp-content/uploads/sites/2/2017/02/Bread-Hearty-Loaf.jpg'),
-(4, 'Hearty Bread', 2000, '	Common	', 'Hearth', 3, '', 'https://eso.mmo-fashion.com/wp-content/uploads/sites/2/2017/02/Hearty-Bread.jpg'),
 (12, 'Alinor Bed, Overhang Full', 5000, '	Alinor	', 'Suite', 4, '', 'https://eso.mmo-fashion.com/wp-content/uploads/sites/2/2018/05/High-Elf-Bed-Overhang-Full.jpg'),
 (13, 'Breton Throne', 30000, '	Breton	', 'Gallery', 5, '', 'https://eso.mmo-fashion.com/wp-content/uploads/sites/2/2017/02/Breton-Throne.jpg'),
 (16, 'Alinor Meal, Individual', 5600, '	Alinor	', 'Hearth', 2, '', 'https://eso.mmo-fashion.com/wp-content/uploads/sites/2/2018/05/High-Elf-Meal-Individual.jpg'),
 (17, 'Dark Elf Wardrobe, Scaled', 3000, '	Dark Elf	', 'Suite', 3, '', 'https://eso.mmo-fashion.com/wp-content/uploads/sites/2/2017/02/Dark-Elf-Wardrobe-Scaled.jpg'),
 (19, 'Rough Platform, Stage', 300, '	Common	', 'Miscellaneous', 1, '', 'https://eso.mmo-fashion.com/wp-content/uploads/sites/2/2017/01/Rough-Platform-Stage.jpg'),
-(21, 'Argonian Basket, Serving', 1000, '	Argonian	', '', 2, '', '---'),
+(21, 'Argonian Basket, Serving', 1000, '	Argonian	', '', 2, '', 'https://eso.mmo-fashion.com/wp-content/uploads/sites/2/2017/02/Argonian-Basket-Serving.jpg'),
 (23, 'Argonian Curtain of the Nest', 10000, '	Daedric	', 'Library', 3, '', 'https://eso.mmo-fashion.com/wp-content/uploads/sites/2/2017/01/Argonian-Curtain-of-the-Nest.jpg');
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `movelpacote`
---
-
-CREATE TABLE `movelpacote` (
-  `idMovel` int(11) NOT NULL,
-  `idPacote` int(11) NOT NULL,
-  `quantidade` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -91,7 +76,9 @@ CREATE TABLE `pacote` (
   `nome` varchar(64) NOT NULL,
   `preco` int(11) NOT NULL,
   `estilo` varchar(16) NOT NULL,
-  `categoria` varchar(16) NOT NULL
+  `categoria` varchar(16) NOT NULL,
+  `imagem` varchar(1023) NOT NULL,
+  `conteudo` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -148,13 +135,6 @@ CREATE TABLE `venda` (
 --
 ALTER TABLE `movel`
   ADD PRIMARY KEY (`idMovel`);
-
---
--- Indexes for table `movelpacote`
---
-ALTER TABLE `movelpacote`
-  ADD PRIMARY KEY (`idMovel`,`idPacote`),
-  ADD KEY `pacote_movelpacote_fk` (`idPacote`);
 
 --
 -- Indexes for table `movelvenda`
@@ -220,13 +200,6 @@ ALTER TABLE `venda`
 --
 -- Constraints for dumped tables
 --
-
---
--- Limitadores para a tabela `movelpacote`
---
-ALTER TABLE `movelpacote`
-  ADD CONSTRAINT `movel_movelpacote_fk` FOREIGN KEY (`idMovel`) REFERENCES `movel` (`idMovel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `pacote_movelpacote_fk` FOREIGN KEY (`idPacote`) REFERENCES `pacote` (`idPacote`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Limitadores para a tabela `movelvenda`
