@@ -19,6 +19,8 @@ function navega($pagina){
     case 'Contato':
     require 'paginas/Contato.php';
     break;
+
+
     case 'insertMoveis':
     require 'controle/insertMoveis.php';
     break;
@@ -31,6 +33,24 @@ function navega($pagina){
     case 'deleteMovel':
     require 'controle/deleteMovel.php';
     break;
+
+
+    
+    case 'deletePacote':
+    require 'controle/deletePacote.php';
+    break;
+    case 'updatePacote':
+    require 'paginas/updatePacote.php';
+    break;
+    case 'updatePacoteControl':
+    require 'controle/updatePacoteControl.php';
+    break;
+case 'PacoteInfo':
+require 'paginas/pacoteInfo.php';
+break;
+
+
+
     default:
     require 'paginas/Inicio.php';
     break;

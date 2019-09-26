@@ -1,60 +1,69 @@
-<!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="../resources/css/bootstrap.css">
-  <title>Compra : Pacotes</title>
-</head>
-<body>
-  
-  <div class="container bg-dark">
+<div class="container bg-dark">
     <div class="row">
       <h2 class="text-warning pl-3" >Compra: Pacotes</h2>
 
     </div>
-    <!-- Linha dos filtros -->
     <div class="row">
       <h3 class="text-warning pl-3">Filtros</h3>
     </div>
 
-<!-- imagens -->
-<div class="row">
+    <div class="bg-light p-3">
 
-    <div class="row">
-      <!-- Colunas das imagens -->
-      <div class="col-md">
-        <img src="Images/a.png" alt="" width="250px" height="">
-      </div>
 
-      <div class="col-md">
-        <img src="Images/d.png" alt="" width="250px" height="">
-      </div>
+<table class="display container" id="datatable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Style</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Select</th>
+        <th>View</th>
 
-      <div class="col-md">
-        <img src="Images/f.png" alt="" width="250px" height="">
-      </div>
+      </tr>
+    </thead>
+    <tbody>
+      <?php
+      $con = conecta();
+      $res = mysqli_query ($con, 'SELECT * FROM pacote');
+      while ($pacote = mysqli_fetch_assoc($res)):?>
+            
+      <tr>
+        <td>
+          <?php echo $pacote['nome']; ?>
+        </td>
+        <td>
+          <?php echo $pacote['estilo']; ?>
+        </td>
+        <td>
+          <?php echo $pacote['categoria']; ?>
+        </td>
+        <td class="preco">
+          <?php echo $pacote['preco']; ?>
+        </td>
+        <td class="text-center ">
+         <input type="checkbox">
+        </td>
+        <td class="text-center">
 
-      <div class="col-md">
-        <img src="Images/g.png" alt="" width="250px" height="">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md">
-        <img src="Images/h.png" alt="" width="250px" height="">
-      </div>
+        <a  href="?pagina=PacoteInfo&idPacote=<?php echo $pacote['idPacote']?>">
+            <button type='button' class='btn btn-default'> <i class="material-icons">visibility</i> </button>
+          </a>
 
-<div class="col-md">
-  <img src="Images/i.png" alt="" width="250px" height="">
+        </td>
+
+      </tr>
+  </div>
+      <?php endwhile; ?>
+    </tbody>
+    
+  </table>
+
 </div>
 
-<div class="col-md-">
-  <img src="Images/s.png" alt="" width="250px" height="">
-</div>
-
-    </div>
 
 
-  </div>
-  </div>
-</body>
-</html>
+
+
+
+
