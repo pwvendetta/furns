@@ -57,26 +57,29 @@
   <!-- Linha 3 - Nossas Contribuições e Luxury Vendor -->
 
   <div class="row my-5">
-    <div class="col">
-    </div>
 
-    <div class="col text-center border border-dark bg-dark p-1">
-      <img src="./resources/Images/Contributions/Bathroom.png" alt="Imagem não Encontrada" height="256px" class="m-0">
-      <p class="m-0 text-primary">Nossas Contribuições</p>
-      <p class="m-0 text-warning"></p>
-    </div>
 
     <div class="col">
     </div>
 
     <div class="col text-center border border-dark bg-dark p-1">
       <img src="./resources/Images/Fixed/luxury-furnisher.jpg" alt="Imagem não Encontrada" height="256px" class="m-0">
-      <p class="m-0 text-primary">Luxury Furnisher</p>
-      <p class="m-0 text-warning"></p>
+
     </div>
 
     <div class="col">
     </div>
+
+    <div class="col text-center border border-dark bg-dark p-1">
+      <p class="m-0 text-primary">Luxury Furnisher</p>
+    </div>
+
+
+    <div class="col">
+    </div>
+
+
+
   </div>
 
 
