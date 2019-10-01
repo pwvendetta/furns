@@ -55,6 +55,7 @@
     <!-- FIM FILTROS -->
     <!-- TABELA SELECIONAR ITEMS  -->
     	<div class="bg-light p-3 pr-5">
+      <form action="" method="post">
 
     <table class="display container" id="datatable">
 			<thead>
@@ -76,34 +77,18 @@
 				$res = mysqli_query ($con, 'SELECT * FROM movel');
 				while ($movel = mysqli_fetch_assoc($res)):?>
 				<tr
-        
 					<?php
-      
       switch ($movel['qualidade']) {
-        case '1':
-        ?>  style= 'background-color: #c2c2c2' 
-					<?php
-          break;
-        case '2':
-        ?>  style= 'background-color:#9cfca8' 
-					<?php
-        break;
-        case '3':
-        ?>  style= 'background-color: #7d6ff5' 
-					<?php
-          break;
-        case '4':
-        ?>  style= 'background-color: #e97dff' 
-					<?php
-          break;
-        case '5':
-        ?>  style= 'background-color: #eeee77' 
-					<?php
-          break;
-      }
-      ?>
-      >
-					<td style="text-align: center;"><input style="text-align: center;" type="number"></td>
+        case '1':        echo "style='background-color: #c2c2c2'";        break;
+        case '2':        echo "style= 'background-color:#9cfca8'" ;        break;
+        case '3':        echo "style= 'background-color: #7d6ff5' ";				break;
+        case '4':        echo "style= 'background-color: #e97dff' ";				break;
+        case '5':        echo "style= 'background-color: #eeee77' ";			  break;      }
+        $name = "item_".$movel['idMovel'];
+        ?>      >
+					<td style="text-align: center;">
+          <input style="text-align: center;" type="number" precoItem="<?php echo $movel['preco'];?>" nomeItem="<?php echo $movel['nome'];?>" class="quantidade" iditem="<?php echo $movel['idMovel'];?>" name="<?php echo $name;?>">
+          </td>
 					<td>
 						<?php echo $movel['nome']; ?>
 					</td>
@@ -128,6 +113,8 @@
 				<?php endwhile; ?>
 			</tbody>
 		</table>
+
+  
     </div>
     <!-- FIM TABELA DE SELECIONAR ITEMS -->
     <div class="row my-2 mx-1">
@@ -147,51 +134,145 @@
         </div>
 
 
+        <div id="carrinho">
         <div class="row">
           <div class="col-sm">
-            <p>Clockwork Chair, Practical</p>
+            <p>Nenhum Item Adicionado</p>
           </div>
-          <div class="col-sm text-center">
-            <p>3</p>
-          </div>
-          <div class="col-sm text-right">
-            <p>6400</p>
-          </div>
+            <div class="col-sm text-center">
+              <p>0</p>
+            </div>
+            <div class="col-sm text-right">
+              <p>0</p>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <p>Clockwork Stool, Practical</p>
-          </div>
-          <div class="col-sm text-center">
-            <p>2</p>
-          </div>
-          <div class="col-sm text-right">
-            <p>3200</p>
-          </div>
         </div>
+        
 
       </div>
       <!-- FIM TABELA ITEMS SELECIONADOS -->
       <!-- COMFIRMAÇÃO DE COMPRA -->
       <div class="col-sm-2-12 bg-dark ml-2 text-center text-warning">
         <div class="container">
-          <p>Items: 5</p>
-          <p>Preço: 9600</p>
+          <p>Items: <span id="totalItens">0</span></p>
+          <p>Preço: <span id="totalPreco">0</span></p>
         </div>
         <div class="container">
-          <button class="btn btn-outline-dark pl-5 pr-5 bg-secondary text-white" type="submit">Comprar</button>
+          <button class="btn btn-outline-dark pl-5 pr-5 bg-secondary text-white" id="btnCalcular" type="button">Calcular</button>
         </div>
         <div class="container">
-          <button class="btn btn-outline-dark pl-5 pr-5 bg-secondary text-white" type="submit">Limpar</button>
+          <button class="btn btn-outline-dark pl-5 pr-5 bg-secondary text-white"  id="btnLimpar" type="reset">Limpar</button>
+        </div>
+        <div class="container">
+          <button class="btn btn-outline-dark pl-5 pr-5 bg-secondary text-white" id="btnComprar" type="button">Finalizar</button>
         </div>
       </div>
       <!-- COMFIRMAÇÃO DE COMPRA -->
     </div>
   </div>
-<!--
+  </form>
 
 
-</body>
+
+<script>
+$(document).ready(function () {
+  
+  $('#btnCalcular').click(function (e) { 
+    e.preventDefault();
+
+    var totalCarrinho = 0;
+
+    var totalItens = 0;
+    $('#carrinho').html("");
+
+    $('.quantidade').each(function(){
+      
+      if($(this).val() != "" && parseInt($(this).val()) > 0) {
+        var total = parseInt($(this).attr("precoItem"))* parseInt($(this).val());
+        var nome = $(this).attr("nomeItem");
+        var quantidade = $(this).val();
+        totalCarrinho = totalCarrinho+total;
+        totalItens = totalItens+parseInt(quantidade);
+
+        var html = `
+        <div class="row">
+          <div class="col-sm">
+            <p>`+nome+`</p>
+          </div>
+          <div class="col-sm text-center">
+            <p>`+quantidade+`</p>
+          </div>
+          <div class="col-sm text-right">
+            <p>`+total+`</p>
+          </div>
+        </div>
+        `;
+        $('#carrinho').append(html);
+
+        }
+
+        $("#totalItens").text(""+totalItens);
+        $("#totalPreco").text("G"+totalCarrinho);
+    });
+    
+  });
+
+  
+$("#btnLimpar").click(function(){
+  $('#carrinho').html(`<div class="row">
+          <div class="col-sm">
+            <p>Nenhum Item Adicionado</p>
+          </div>
+          <div class="col-sm text-center">
+            <p>0</p>
+          </div>
+          <div class="col-sm text-right">
+            <p>0</p>
+          </div>
+        </div>`);
 
 
-</html> -->
+});
+
+
+
+$("#btnComprar").click(function (e) { 
+  e.preventDefault();
+  var itens =   "{";
+
+
+  $('.quantidade').each(function(){
+      
+      if($(this).val() != "" && parseInt($(this).val()) > 0) {
+        var nome = '"'+$(this).attr("idItem")+'" : ';
+        var quantidade = '"'+$(this).val()+'", ';
+
+        itens=itens+nome+quantidade;
+        
+        }
+    });
+
+    itens = itens.substring(0, itens.length - 2);
+
+    itens= itens+"}";
+    
+    itens = JSON.parse(itens);
+    
+    $.post("controle/vendaMovel.php", itens,
+      function (resp, textStatus, jqXHR) {
+        alert(resp);
+      },
+      "text"
+    );
+
+
+});
+
+
+
+});//Fim Ready
+
+
+
+
+</script>
