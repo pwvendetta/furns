@@ -155,7 +155,7 @@
       <div class="col-sm-2-12 bg-dark ml-2 text-center text-warning">
         <div class="container">
           <p>Items: <span id="totalItens">0</span></p>
-          <p>Preço: <span id="totalPreco">0</span></p>
+          <p>Preço: <span id="totalPreco">0 Gold</span></p>
         </div>
         <div class="container">
           <button class="btn btn-outline-dark pl-5 pr-5 bg-secondary text-white" id="btnCalcular" type="button">Calcular</button>
@@ -212,7 +212,7 @@ $(document).ready(function () {
         }
 
         $("#totalItens").text(""+totalItens);
-        $("#totalPreco").text("G"+totalCarrinho);
+        $("#totalPreco").text(totalCarrinho+" Gold");
     });
     
   });
@@ -230,7 +230,8 @@ $("#btnLimpar").click(function(){
             <p>0</p>
           </div>
         </div>`);
-
+        $("#totalItens").text("");
+        $("#totalPreco").text("0 Gold");
 
 });
 

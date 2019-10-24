@@ -7,11 +7,11 @@ $idVenda= $venda['idVenda']+1;
 $currentDateTime = date('Y-m-d');
 $insertVenda ="insert into venda (idVenda, data, idUsuario) values ('$idVenda','$currentDateTime', '$user')";
 $insVenda = mysqli_query($con,$insertVenda);
-foreach($_POST as $idMovel => $quantidade) {
+foreach($_POST as $idPacote => $quantidade) {
 
-    $movel = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM movel WHERE idMovel=$idMovel"));
-    $idMovel = $movel['idMovel'];
-    $insert = "INSERT INTO movelvenda (idVenda, idMovel,quantidade) VALUES ('$idVenda', '$idMovel', '$quantidade')";
+    $pacote = mysqli_fetch_assoc(mysqli_query($con, "SELECT * FROM pacote WHERE idPacote=$idPacote"));
+    $idPacote = $pacote['idPacote'];
+    $insert = "INSERT INTO pacotevenda (idVenda, idPacote,quantidade) VALUES ('$idVenda', '$idPacote', '$quantidade')";
     $insertItemVenda = mysqli_query($con,$insert);
   }
   echo "V";
