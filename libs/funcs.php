@@ -49,6 +49,11 @@ case 'PacoteInfo':
 require 'paginas/pacoteInfo.php';
 break;
 
+case 'LoginRegistro':
+require 'paginas/loginRegistro.php';
+break;
+
+
 
 
     default:

@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="../resources/css/bootstrap.css">
-  <title>Inicio</title>
-</head>
-<body class="bg-black">
+
+<h3 class='text-warning'><?php echo $_SESSION['login'];?></h3>
   <!-- Linha 1 - Pacote e Estilo em Destaque -->
   <div class="row my-5">
     <div class="col">
@@ -82,7 +76,3 @@
 
   </div>
 
-
-
-</body>
-</html>

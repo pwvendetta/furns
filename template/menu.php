@@ -12,12 +12,22 @@
         <a href="index.php"><h1 class="text-warning">Furns</h1></a>
         </div>
 
+        <?php
 
-        <div class="col-sm-1-12">
-        <a href="?pagina=FormMoveis">  <button type="button" class="btn btn-primary">Login</button></a>
-        </div>
-        <div class="col-sm-1-12">
-          <a href="?pagina=FormPacotes"> <button type="button" class="btn btn-primary">Registro</button></a>
+        if($_SESSION['logado'] == false){
+
+        echo "<div class='col-sm-1-12'><a href='?pagina=LoginRegistro'><button type='button' class='btn btn-primary'>Sign In / Log In</button></a></div>";
+        
+        }else{
+          ?>
+          <div class="col-sm-1-12">
+          <span class='text-primary'>Welcome <?php echo $_SESSION['nickname'];?></span></div><div class="col-sm-1-12">
+          <form action="controle/logOut.php"><input type="submit" value="LogOut" class='btn btn-primary'></form>
+          </div>
+          <?php
+        }
+
+        ?>
         </div>
       </div>
       <!-- Botões -->

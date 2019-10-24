@@ -1,6 +1,17 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC 
+"-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <html lang="pt-br" dir="ltr">
 <head>
+<?php if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == true))
+{
+  unset($_SESSION['login']);
+  unset($_SESSION['senha']);
+  $_SESSION['logado']=false;
+  }else{ $_SESSION['logado'] = true; }
+?>
+
     <meta charset="utf-8">
 
 
