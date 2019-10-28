@@ -1,5 +1,3 @@
-<?php require 'template/header.php';
-?>
 <div class="container bg-light">
     <div class="row">
         <div class="col-lg">
@@ -13,7 +11,7 @@
             </form>
         </div>
         <div class="col-lg">
-            <form action="controle/registro.php" name="formRegistro" id="formRegistro" >
+            <form method="post" action="controle/registro.php" name="formRegistro" id="formRegistro" >
                 <h3 class="text-warning">Registro</h3>
                 <label for="login">User</label>
                 <input type="text" name="login" id="login" ><br>

@@ -21,8 +21,12 @@
         }else{
           ?>
           <div class="col-sm-1-12">
-          <span class='text-primary'>Welcome <?php echo $_SESSION['nickname'];?></span></div><div class="col-sm-1-12">
-          <form action="controle/logOut.php"><input type="submit" value="LogOut" class='btn btn-primary'></form>
+          <h5 class='text-primary float-l'>Welcome <?php echo $_SESSION['nickname'];?>   </h5> 
+          </div><div class="col-sm-1-12">
+          <form action="controle/logOut.php">
+          <input type="submit" value="LogOut" class='btn btn-primary float-r'>
+          </form>
+          
           </div>
           <?php
         }
@@ -32,9 +36,9 @@
       </div>
       <!-- Botões -->
       <div class="row">
-        <div class="col-md">
+        <!-- <div class="col-md">
           <a href="index.php"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Início</button></a>
-        </div>
+        </div> -->
         <div class="col-md">
           <a href="index.php?pagina=CompraMoveis"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Móveis</button></a>
         </div>
@@ -48,5 +52,40 @@
           <a href="index.php?pagina=Contato"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Contato</button></a>
         </div>
       </div>
+
+      <!-- BOTÕES ADM -->
+        <?php
+        if ($_SESSION['admin']){
+        ?>
+      <div class="row">
+        <div class="col-md">
+          <h3 class="text-primary">Gerenciar:</h3>
+        </div>
+        <div class="col-md">
+          <a href="index.php?pagina=FormMoveis"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Móveis</button></a>
+        </div>
+        <div class="col-md">
+          <a href="index.php?pagina=FormPacotes"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Pacotes</button></a>
+        </div>
+        <div class="col-md">
+          <a href="index.php?pagina=Luxury"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Início</button></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <h3 class="text-primary">Relatórios:</h3>
+        </div>
+        <div class="col-md">
+          <a href="index.php?pagina=RelVendaMoveis"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Venda de Móveis</button></a>
+        </div>
+        <div class="col-md">
+          <a href="index.php?pagina=RelVendaPacotes"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Venda de Pacotes</button></a>
+        </div>
+        <div class="col-md">
+          <a href="index.php?pagina=RelEstilos"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Estilos + Vendidos</button></a>
+        </div>
+        
+      </div>
+        <?php } ?>
     </div>
   <!-- MENU - FIM -->

@@ -19,8 +19,6 @@ function navega($pagina){
     case 'Contato':
     require 'paginas/Contato.php';
     break;
-
-
     case 'insertMoveis':
     require 'controle/insertMoveis.php';
     break;
@@ -33,9 +31,6 @@ function navega($pagina){
     case 'deleteMovel':
     require 'controle/deleteMovel.php';
     break;
-
-
-    
     case 'deletePacote':
     require 'controle/deletePacote.php';
     break;
@@ -45,27 +40,27 @@ function navega($pagina){
     case 'updatePacoteControl':
     require 'controle/updatePacoteControl.php';
     break;
-case 'PacoteInfo':
-require 'paginas/pacoteInfo.php';
-break;
-
-case 'LoginRegistro':
-require 'paginas/loginRegistro.php';
-break;
-
-
-
-
+    case 'PacoteInfo':
+    require 'paginas/pacoteInfo.php';
+    break;
+    case 'LoginRegistro':
+    require 'paginas/loginRegistro.php';
+    break;
+    case 'RelVendaMoveis':
+    require 'paginas/relVendaMoveis.php';
+    break;
+    case 'RelVendaPacotes':
+    require 'paginas/relVendaPacotes.php';
+    break;
+    case 'RelEstilos':
+    require 'paginas/relEstilos.php';
+    break;
     default:
     require 'paginas/Inicio.php';
     break;
   }
 }
- 
 function conecta() {
   return mysqli_connect('127.0.0.1', 'root', '', 'furns');
 }
-
-
-
 ?>

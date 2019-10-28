@@ -118,6 +118,9 @@
     </div>
     <!-- FIM TABELA DE SELECIONAR ITEMS -->
     <div class="row my-2 mx-1">
+
+<?php if($_SESSION['logado']){
+?>
       <!-- TABELA ITEMS SELECIONADOS -->
       <div class="col-lg md-5 bg-dark text-white py-2 mr-0">
 
@@ -172,7 +175,10 @@
   </div>
   </form>
 
+<?php }else{
+?><h4 class="text-primary">É necessário estar logado para realizar compras</h4><?php } ?>
 
+</div>
 
 <script>
 $(document).ready(function () {

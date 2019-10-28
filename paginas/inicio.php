@@ -1,5 +1,3 @@
-
-<h3 class='text-warning'><?php echo $_SESSION['login'];?></h3>
   <!-- Linha 1 - Pacote e Estilo em Destaque -->
   <div class="row my-5">
     <div class="col">

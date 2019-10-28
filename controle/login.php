@@ -18,7 +18,7 @@ $_SESSION['email'] = $user['email'];
 
 if($user['idUsuario'] == 1){
   $_SESSION['admin']=true;
-}
+}else{$_SESSION['admin']=false;}
 
 
 header('location:../index.php');
@@ -28,7 +28,7 @@ else{
   unset ($_SESSION['senha']);
   unset ($_SESSION['nickname']);
   unset ($_SESSION['email']);
-  header('location:../controle/loginRegistro.php');
+  header('location:../index.php?pagina=LoginRegistro');
   }
 
 ?>

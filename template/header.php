@@ -9,6 +9,7 @@
   unset($_SESSION['login']);
   unset($_SESSION['senha']);
   $_SESSION['logado']=false;
+  $_SESSION['admin']=false;
   }else{ $_SESSION['logado'] = true; }
 ?>
 
@@ -20,8 +21,12 @@
         <title>Furns</title>
 
     <!-- <link rel="stylesheet" type="text/css" href="resources/DataTables/dataTables.css"/> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="./resources/js/jquery-3.4.1.jss"></script>
+    <!-- <script type="text/javascript" src="./resources/js/jquery-3.4.1.jss"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+
     <!-- <script type="text/javascript" src="resources/DataTables-1.10.18/js/jquery.dataTables.min.js"></script> -->
 
     <link rel="stylesheet" type="text/css" href="./resources/DataTables/datatables.css"/>

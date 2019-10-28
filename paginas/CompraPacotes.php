@@ -14,11 +14,11 @@
 <table class="display container" id="datatable">
     <thead>
       <tr>
+        <th>Quantity</th>
         <th>Name</th>
         <th>Style</th>
         <th>Category</th>
         <th>Price</th>
-        <th>Select</th>
         <th>View</th>
 
       </tr>
@@ -68,6 +68,8 @@
 
 
 <div class="row my-2 mx-1">
+<?php if($_SESSION['logado']){
+?>
       <!-- TABELA ITEMS SELECIONADOS -->
       <div class="col-lg md-5 bg-dark text-white py-2 mr-0">
 
@@ -122,7 +124,9 @@
   </div>
 
 </form>
-
+<?php }else{
+?><h4 class="text-primary">É necessário estar logado para realizar compras</h4><?php } ?>
+</div>
 
 
 <script>
