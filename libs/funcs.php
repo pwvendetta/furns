@@ -55,6 +55,9 @@ function navega($pagina){
     case 'RelEstilos':
     require 'paginas/relEstilos.php';
     break;
+    case 'RelMensagem':
+    require 'paginas/relMensagem.php';
+    break;
     default:
     require 'paginas/Inicio.php';
     break;

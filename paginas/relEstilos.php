@@ -9,11 +9,11 @@
         </div>
     </div>
     <div class="bg-light p-3 pr-5">
-    <table class="display container" id="datatable">
+    <table class="display container" id="">
                 <thead>
                     <tr>
-                        <th>Estilo</th>
-                        <th>Qty</th>
+                        <th id="estiloHeader">Estilo</th>
+                        <th id="qtyHeader">Qty</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -94,3 +94,22 @@
     </div>
 </div>
                 <?php } ?>
+
+
+
+<script>
+$('th').click(function(){
+    var table = $(this).parents('table').eq(0)
+    var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+    this.asc = !this.asc
+    if (!this.asc){rows = rows.reverse()}
+    for (var i = 0; i < rows.length; i++){table.append(rows[i])}
+})
+function comparer(index) {
+    return function(a, b) {
+        var valA = getCellValue(a, index), valB = getCellValue(b, index)
+        return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
+    }
+}
+function getCellValue(row, index){ return $(row).children('td').eq(index).text() }
+</script>
