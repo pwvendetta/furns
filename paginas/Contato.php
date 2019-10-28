@@ -6,12 +6,12 @@
 <?php if($_SESSION['logado']){
 ?>
 <form action="controle/send_form_email.php" method="post">
-    <!-- <label for="" class="text-primary">Subject</label><br>
-    <input name="subject" type="text" style="width:100%"> -->
+    <label for="" class="text-primary">Subject</label><br>
+    <input name="subject" type="text" style="width:100%">
     <br>
-    <label for="comments">Comments</label>
-    <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-
+    <label for="comments" class="text-primary">Comments</label>
+    <textarea  name="comments" maxlength="1000" cols="25" rows="6" style="width:100%"></textarea>
+<br><br>
     <!-- <input type="submit" value="Submit">  -->
     <input type="submit" name="" value="Enviar" class="form-control bg-warning border-warning">   
 </form>

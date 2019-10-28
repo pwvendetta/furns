@@ -10,7 +10,7 @@ if(mysqli_num_rows($result) > 0 )
 {
   $user = mysqli_fetch_assoc($result);
 
-
+$_SESSION['id'] = $user['idUsuario'];
 $_SESSION['login'] = $login;
 $_SESSION['senha'] = $senha;
 $_SESSION['nickname'] = $user['nickname'];

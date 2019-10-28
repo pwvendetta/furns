@@ -1,27 +1,21 @@
 <?php
-$ composer require "swiftmailer/swiftmailer:^6.0"
+session_start();
+$idUsuario = $_SESSION['id'];
+$assunto = $_POST['subject'];
+$conteudo = $_POST['comments'];
 
 
-require_once '/path/to/vendor/autoload.php';
+$con = mysqli_connect('127.0.0.1', 'root', '', 'furns');
+$insert = "insert into mensagem (idUsuario, assunto, conteudo)
+ values ('$idUsuario', '$assunto', '$conteudo')";
+ 
+$res = mysqli_query($con, $insert);
 
-// Create the Transport
-$transport = (new Swift_SmtpTransport('smtp.example.org', 25))
-  ->setUsername('your username')
-  ->setPassword('your password')
-;
+var_dump($con);echo"<br><br><br>"; var_dump($insert);echo"<br><br><br>"; var_dump($res);
 
-// Create the Mailer using your created Transport
-$mailer = new Swift_Mailer($transport);
 
-// Create a message
-$message = (new Swift_Message('Wonderful Subject'))
-  ->setFrom(['john@doe.com' => 'John Doe'])
-  ->setTo(['receiver@domain.org', 'other@domain.org' => 'A name'])
-  ->setBody('Here is the message itself')
-  ;
+if ($res){echo "sucesso";}else{echo "falha";}
 
-// Send the message
-$result = $mailer->send($message);
 
 
 ?>

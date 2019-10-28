@@ -1,6 +1,7 @@
 <?php if(!$_SESSION['logado']){?><h4 class="text-primary">É necessário ser o administrador para visualizar os relatorios</h4>
 <?php }else{
 ?>
+
 <div class="container bg-light">
     <div class="row">
         <div class="col-md">

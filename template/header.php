@@ -28,7 +28,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
 
     <!-- <script type="text/javascript" src="resources/DataTables-1.10.18/js/jquery.dataTables.min.js"></script> -->
-
+    <script src="./resources/js/sortElements.js"></script>
     <link rel="stylesheet" type="text/css" href="./resources/DataTables/datatables.css"/>
     <script type="text/javascript" src="./resources/DataTables/datatables.js"></script>
     <script type="text/javascript" src="./resources/DataTables/DataTables/dataTables.bootstrap.js"></script>
