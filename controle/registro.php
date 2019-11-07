@@ -12,14 +12,8 @@ VALUES (NULL, '$conta', '$senha', '$nickname', '$email')";
 $res = mysqli_query($con, $insert);
 
 if ($res){
-    echo "Sucesso";
-
-    time_nanosleep(5,0);
-
     header('location:../index.php');
 }else{
-    echo "falha";
-    time_nanosleep(5,0);
     header('location:../index.php?pagina=LoginRegistro');
 
 }

@@ -137,7 +137,7 @@
 											<h4 class="text-warning">Conteúdo:</h4>
 											<!-- <button type="button" class="btn btn-primary add_field_button">ADD</button> -->
 											<div class=" p-3">
-												<textarea name="conteudo" style="width:100%">CONTEUDO</textarea>
+												<textarea name="conteudo" style="width:100%"></textarea>
 												<!-- <div class="input_fields_wrap"></div> -->
 											</div>
 											<hr class="bg-warning">

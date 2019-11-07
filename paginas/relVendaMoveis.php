@@ -8,7 +8,7 @@
         </div>
     </div>
     <div class="bg-light p-3 pr-5">
-    <table class="display container" id="datatable">
+    <table class="display container" id="">
                 <thead>
                     <tr>
                         <th>Usuario</th>
@@ -16,39 +16,46 @@
                         <th>Date</th>
                         <th>Item</th>
                         <th>Qty</th>
+                        <th>Concluido</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                    $con = conecta();
+$con =  mysqli_connect('127.0.0.1', 'root', '', 'furns');
                     $resV = mysqli_query ($con, 'SELECT * FROM venda ORDER BY idvenda DESC');
                     while ($vendas = mysqli_fetch_assoc($resV)):
                         $resU = mysqli_query($con, "SELECT * FROM `usuario` WHERE `idUsuario` ='".$vendas['idUsuario']."'");
                         $usuario = mysqli_fetch_assoc($resU);
                         $resMV = mysqli_query($con, "SELECT * FROM `movelvenda` WHERE `idVenda` ='". $vendas['idVenda']."'");
-                        ?><tr>
+                        ?>
+                        <form action="controle/concluirPedido.php" method="post">
+                        <tr <?php if($vendas['concluido'] == 1){ echo "style='background-color: #9cfca8'";}?>>
                         <td><?php echo "@".$usuario['nickname'];?></td>
                         <td><?php echo $vendas['valor'];?></td>
                         <td><?php echo $vendas['data'];?></td>
+                        <!-- <td></td> -->
                         <td></td>
                         <td></td>
-                        <td></td>
+                        <input type="hidden" name="idVenda" value="<?php echo $vendas['idVenda'];?>">
+                        <td> <input type="submit" <?php if($vendas['concluido'] == 1){ echo "value='X'";}else{echo "value='V'";}?> ></td>
                         </tr>
                         <?php
                         while ($movelVenda = mysqli_fetch_assoc($resMV)):
                             $resM =  mysqli_query($con, "SELECT * FROM movel WHERE idMovel ='". $movelVenda['idMovel']."'");
                             $movel = mysqli_fetch_assoc($resM);
                         ?>
-                        <tr>
+                        <tr <?php if($vendas['concluido'] == 1){ echo "style='background-color: #9cfca8'";}?>>
                         <td></td>
                         <td></td>
                         <td></td>
                         <td><?php echo $movel['nome'];?></td>
                         <td><?php echo $movelVenda['quantidade'];?></td>
                         <td></td>
+                        <!-- <td></td> -->
                         </tr>                      
                         <?php
                         endwhile;
+                        echo '</form>';
                     endwhile;
                     ?>
                 </tbody>
@@ -56,3 +63,4 @@
     </div>
 </div>
                 <?php } ?>
+
