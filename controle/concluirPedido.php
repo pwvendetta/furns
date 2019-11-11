@@ -1,4 +1,5 @@
 <?php 
+session_start();
 $con =  mysqli_connect('127.0.0.1', 'root', '', 'furns');
 
 $idVenda = $_POST['idVenda'];
@@ -11,11 +12,8 @@ if($venda['concluido'] == 0 || $venda['concluido'] == NULL){$update = "UPDATE `v
 
 $res2 = mysqli_query($con, $update);
 
-if ($res2){
-    header('location:../index.php?pagina=RelVendaMoveis');
-} else {
-    header('location:../index.php?pagina=RelVendaMoveis');
-}
+    header('Location: ' . $_SERVER['HTTP_REFERER'])
+
 // var_dump($con); echo "<br><br><br><br>";
 // var_dump($idVenda); echo "<br><br><br><br>";
 // var_dump($select); echo "<br><br><br><br>";

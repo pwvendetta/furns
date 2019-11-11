@@ -148,7 +148,7 @@ $(document).ready(function () {
         var quantidade = $(this).val();
         totalCarrinho = totalCarrinho+total;
         totalItens = totalItens+parseInt(quantidade);
-
+        alert("asdf");
         var html = `
         <div class="row">
           <div class="col-sm">

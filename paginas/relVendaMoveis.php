@@ -24,6 +24,7 @@
 $con =  mysqli_connect('127.0.0.1', 'root', '', 'furns');
                     $resV = mysqli_query ($con, 'SELECT * FROM venda ORDER BY idvenda DESC');
                     while ($vendas = mysqli_fetch_assoc($resV)):
+                        if($vendas['produto'] == 0){
                         $resU = mysqli_query($con, "SELECT * FROM `usuario` WHERE `idUsuario` ='".$vendas['idUsuario']."'");
                         $usuario = mysqli_fetch_assoc($resU);
                         $resMV = mysqli_query($con, "SELECT * FROM `movelvenda` WHERE `idVenda` ='". $vendas['idVenda']."'");
@@ -56,6 +57,7 @@ $con =  mysqli_connect('127.0.0.1', 'root', '', 'furns');
                         <?php
                         endwhile;
                         echo '</form>';
+                        }
                     endwhile;
                     ?>
                 </tbody>
