@@ -1,11 +1,8 @@
-  
-<div class="container bg-dark">
-	<h2 class="text-warning">Alteração de Dados</h2>
-	<h3 class="text-warning">Pacotes</h3>
-
-
-	<div class="bg-light p-3">
-
+	<div class="container bg-dark pb-3">
+    <div class="row">
+    <h2 class="text-warning pl-3" >Gerenciamento: Pacotes</h2>
+    </div>
+    	<div class="bg-light p-3 pr-5">
 
 	<table class="display container" id="datatable">
 			<thead>

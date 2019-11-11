@@ -8,7 +8,7 @@ function navega($pagina){
     require 'paginas/CompraPacotes.php';
     break;
     case 'FormMoveis':
-    require 'paginas/FormMoveis2.php';
+    require 'paginas/FormMoveis.php';
     break;
     case 'FormPacotes':
     require 'paginas/FormPacotes.php';

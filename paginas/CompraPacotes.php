@@ -1,12 +1,8 @@
-<div class="container bg-dark">
+<div class="container bg-dark pb-3">
     <div class="row">
       <h2 class="text-warning pl-3" >Compra: Pacotes</h2>
 
     </div>
-    <div class="row">
-      <h3 class="text-warning pl-3">Filtros</h3>
-    </div>
-
     <div class="bg-light p-3">
 
     <form action="" method="post">
@@ -130,6 +126,7 @@
 
 
 <script>
+
 $(document).ready(function () {
   
   $('#btnCalcular').click(function (e) { 
@@ -148,7 +145,7 @@ $(document).ready(function () {
         var quantidade = $(this).val();
         totalCarrinho = totalCarrinho+total;
         totalItens = totalItens+parseInt(quantidade);
-        alert("asdf");
+
         var html = `
         <div class="row">
           <div class="col-sm">
@@ -164,7 +161,13 @@ $(document).ready(function () {
         `;
         $('#carrinho').append(html);
 
-        }else{  $('#carrinho').html(`<div class="row">
+        }
+        
+        $("#totalItens").text(""+totalItens);
+        $("#totalPreco").text(totalCarrinho+" Gold");
+    });
+    if(totalCarrinho == 0){
+    $('#carrinho').html(`<div class="row">
           <div class="col-sm">
             <p>Nenhum Item Adicionado</p>
           </div>
@@ -174,12 +177,9 @@ $(document).ready(function () {
           <div class="col-sm text-right">
             <p>0</p>
           </div>
-        </div>`);}
-
-        $("#totalItens").text(""+totalItens);
-        $("#totalPreco").text(totalCarrinho+" Gold");
-    });
-    
+        </div>`);
+        $("#totalItens").text("0");
+        $("#totalPreco").text("0 Gold");}
   });
 
   
@@ -197,7 +197,6 @@ $("#btnLimpar").click(function(){
         </div>`);
         $("#totalItens").text("0");
         $("#totalPreco").text("0 Gold");
-
 
 });
 
@@ -238,6 +237,11 @@ $("#btnComprar").click(function (e) {
 
 
 });//Fim Ready
+
+
+
+
+
 
 
 

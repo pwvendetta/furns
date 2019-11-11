@@ -4,6 +4,12 @@ $con = conecta();
 $res = mysqli_query($con, "SELECT * FROM movel WHERE idMovel=$idMovel");
 $movel = mysqli_fetch_assoc($res);
  ?>
+ <div class="container bg-dark pb-3">
+
+<div class="row">
+<h2 class="text-warning pl-3" >Confirmação Exclusão de Móvel</h2>
+</div>
+  <div class="bg-light p-3 pr-5">
 <table border="0" cellpadding=0 cellspacing=0>
     <tr> <td colspan="2" align='center'> Gestão de Moveis!! </td></tr>
     <form action="?pagina=deleteMovel" method="post">
@@ -24,3 +30,4 @@ $movel = mysqli_fetch_assoc($res);
     </tr>
   </form>
 </table>
+</div></div>

@@ -2,13 +2,12 @@
 <?php }else{
 ?>
 
-<div class="container bg-light">
+<div class="container bg-dark pb-3">
     <div class="row">
-        <div class="col-md">
-            <h3 class="text-warning">Estilos Mais Vendidos</h3>
-        </div>
+    <h2 class="text-warning pl-3" >Estilos Mais Vendidos</h2>
     </div>
-    <div class="bg-light p-3 pr-5">
+    	<div class="bg-light p-3 pr-5">
+
     <table class="display container" id="">
                 <thead>
                     <tr>

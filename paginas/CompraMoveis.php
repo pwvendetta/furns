@@ -1,58 +1,8 @@
-  <div class="container">
+<div class="container bg-dark pb-3">
 
-    <div class="row text-white">
-      <h1>Compra: Items</h1>
+    <div class="row">
+    <h2 class="text-warning pl-3" >Compra: Móveis</h2>
     </div>
-    <!-- FILTROS -->
-    <!-- <div class="container  my-2 py-2 bg-dark text-primary ">
-      <h5>Filtros:</h5>
-      <div class="row">
-        <div class="col-sm">
-          <div class="dropdown show">
-            <a class="btn btn-secondary dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Estilos
-            </a>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="dropdown show">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Categoria
-            </a>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="dropdown show">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Subcategoria
-            </a>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="dropdown show">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Qualidade
-            </a>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="dropdown show">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Preço
-            </a>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="dropdown show">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Search
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div> -->
-    <!-- FIM FILTROS -->
     <!-- TABELA SELECIONAR ITEMS  -->
     	<div class="bg-light p-3 pr-5">
       <form action="" method="post">
@@ -183,7 +133,7 @@
 <script>
 $(document).ready(function () {
   
-  $('#btnCalcular').click(function (e) { 
+  $('#btnCalcular').click(function (e) {
     e.preventDefault();
 
     var totalCarrinho = 0;
@@ -220,7 +170,20 @@ $(document).ready(function () {
         $("#totalItens").text(""+totalItens);
         $("#totalPreco").text(totalCarrinho+" Gold");
     });
-    
+    if(totalCarrinho == 0){
+    $('#carrinho').html(`<div class="row">
+          <div class="col-sm">
+            <p>Nenhum Item Adicionado</p>
+          </div>
+          <div class="col-sm text-center">
+            <p>0</p>
+          </div>
+          <div class="col-sm text-right">
+            <p>0</p>
+          </div>
+        </div>`);
+        $("#totalItens").text("0");
+        $("#totalPreco").text("0 Gold");}
   });
 
   
@@ -236,7 +199,7 @@ $("#btnLimpar").click(function(){
             <p>0</p>
           </div>
         </div>`);
-        $("#totalItens").text("");
+        $("#totalItens").text("0");
         $("#totalPreco").text("0 Gold");
 
 });

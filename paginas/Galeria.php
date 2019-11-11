@@ -1,8 +1,10 @@
-<div class="container bg-dark">
-  <h2 class="text-warning">Galeria</h2>
-  <!-- Linha dos filtros -->
+<div class="container bg-dark pb-3">
+    <div class="row">
+    <h2 class="text-warning pl-3" >Galeria</h2>
+    </div>
+    <div class="row">
   <h3 class="text-warning pl-3">Filtros</h3>
-  <div class="row" id="">
+    </div>
     <div class="col-sm text-light">
      
       <label for="">Estilos</label>

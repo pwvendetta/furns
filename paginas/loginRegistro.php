@@ -1,5 +1,14 @@
-<div class="container bg-light">
+<div class="container bg-dark pb-3">
     <div class="row">
+    <h2 class="text-warning pl-3" >Login / Registro</h2>
+    </div>
+    	<!-- <div class="bg-light p-3 pr-5"> -->
+
+
+
+
+
+    <div class="row text-primary">
         <div class="col-lg">
             <form method="post" action="controle/login.php" name="formLogin" id="formLogin" >
                 <h3 class="text-warning">Login</h3>

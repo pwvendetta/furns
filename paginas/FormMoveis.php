@@ -3,16 +3,11 @@
 		<img src="<?php// $movel['imagem']; ?>"  alt="<?php //echo $movel['imagem']; ?>">
 <a href="modal:close">X</a>
 </div> -->
-
-
-
-
-<div class="container bg-dark">
-	<h2 class="text-warning">Alteração de Dados</h2>
-	<h3 class="text-warning">Móveis</h3>
-	<div class="bg-light p-3">
-
-
+	<div class="container bg-dark pb-3">
+    <div class="row">
+    <h2 class="text-warning pl-3" >Gerenciamento: Móveis</h2>
+    </div>
+    	<div class="bg-light p-3 pr-5">
 
 
 

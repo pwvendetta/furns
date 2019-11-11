@@ -1,8 +1,11 @@
+<div class="container bg-dark pb-3">
+    <div class="row">
+      <h2 class="text-warning pl-3" >Contato</h2>
 
-<div class="container bg-dark">
-<h2 class="text-warning">Contato</h2>
+    </div>
+    <div class="bg-light p-3">
 
-<div class="row my-2 mx-1">
+<!-- <div class="row my-2 mx-1"> -->
 <?php if($_SESSION['logado']){
 ?>
 <form action="controle/send_form_email.php" method="post">
@@ -17,4 +20,5 @@
 </form>
 <?php }else{
 ?><h4 class="text-primary">É necessário estar logado para entrar em contato</h4><?php } ?>
+</div>
 </div>
