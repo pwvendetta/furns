@@ -84,7 +84,9 @@
         <div class="col-md">
           <a href="index.php?pagina=RelEstilos"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Estilos + Vendidos</button></a>
         </div>
-        
+        <div class="col-md">
+          <a href="index.php?pagina=RelMensagems"><button class="btn btn-outline-dark pl-5 pr-5 bg-light" type="submit">Mensagens</button></a>
+        </div>
       </div>
         <?php } ?>
     </div>

@@ -1,13 +1,13 @@
 <?php if(!$_SESSION['logado']){?><h4 class="text-primary">É necessário ser o administrador para visualizar os relatorios</h4>
 <?php }else{
 ?>
-<div class="container bg-light">
+
+<div class="container bg-dark pb-3">
     <div class="row">
-        <div class="col-md">
-            <h3 class="text-warning">Relatório de Vendas de Móveis</h3>
-        </div>
+    <h2 class="text-warning pl-3" >Relatório de Vendas de Móveis</h2>
     </div>
-    <div class="bg-light p-3 pr-5">
+    	<div class="bg-light p-3 pr-5">
+
     <table class="display container" id="">
                 <thead>
                     <tr>
@@ -38,7 +38,7 @@ $con =  mysqli_connect('127.0.0.1', 'root', '', 'furns');
                         <td></td>
                         <td></td>
                         <input type="hidden" name="idVenda" value="<?php echo $vendas['idVenda'];?>">
-                        <td> <input type="submit" <?php if($vendas['concluido'] == 1){ echo "value='X'";}else{echo "value='V'";}?> ></td>
+                        <td><input type="submit" <?php if($vendas['concluido'] == 1){ echo "value='X'";}else{echo "value='V'";}?>></td>
                         </tr>
                         <?php
                         while ($movelVenda = mysqli_fetch_assoc($resMV)):
@@ -52,7 +52,6 @@ $con =  mysqli_connect('127.0.0.1', 'root', '', 'furns');
                         <td><?php echo $movel['nome'];?></td>
                         <td><?php echo $movelVenda['quantidade'];?></td>
                         <td></td>
-                        <!-- <td></td> -->
                         </tr>                      
                         <?php
                         endwhile;

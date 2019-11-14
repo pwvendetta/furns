@@ -1,14 +1,14 @@
 <?php if(!$_SESSION['logado']){?><h4 class="text-primary">É necessário ser o administrador para visualizar os relatorios</h4>
 <?php }else{
 ?>
-<div class="container bg-light">
+<div class="container bg-dark pb-3">
     <div class="row">
-        <div class="col-md">
-            <h3 class="text-warning">Relatório de Vendas de Móveis</h3>
-        </div>
+    <h2 class="text-warning pl-3" >Relatório de Vendas de Móveis</h2>
     </div>
-    <div class="bg-light p-3 pr-5">
-    <table class="display container" id="datatable">
+    	<div class="bg-light p-3 pr-5">
+
+        
+        <table class="display container" id="datatable">
                 <thead>
                     <tr>
                         <th>Usuario</th>

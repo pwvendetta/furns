@@ -5,10 +5,13 @@ $res = mysqli_query($con, "SELECT * FROM movel WHERE idMovel=$idMovel");
 $movel = mysqli_fetch_assoc($res);
  ?>
 
-<div class="container bg-dark">
-	<h2 class="text-warning">Alteração de Dados</h2>
-	<h3 class="text-warning">Móveis</h3>
-	<div class="bg-light p-3">
+<div class="container bg-dark pb-3">
+    <div class="row">
+    <h2 class="text-warning pl-3" >Gerenciamento: Móveis</h2>
+    </div>
+    	<div class="bg-light p-3 pr-5">
+
+
 <table class="" border="0" cellpadding=0 cellspacing=0>
     <tr> <td colspan="2" align='center'><h3 class="text-warning">Update</h3>  </td></tr>
     <form action="?pagina=updateMovelControl" method="post">
