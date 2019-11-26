@@ -8,13 +8,13 @@
 
 
 
-    <div class="row text-primary">
+    <div class="row">
         <div class="col-lg">
             <form method="post" action="controle/login.php" name="formLogin" id="formLogin" >
                 <h3 class="text-warning">Login</h3>
-                <label for="login">User</label>
+                <label for="login" class="text-primary">User</label>
                 <input type="text" name="login" id="login" ><br>
-                <label for="senha">Password</label>
+                <label for="senha" class="text-primary">Password</label>
                 <input type="password" name="senha" id="senha" /><br/>
                 <input type="submit" value="LOG IN"/>
             </form>
@@ -22,13 +22,13 @@
         <div class="col-lg">
             <form method="post" action="controle/registro.php" name="formRegistro" id="formRegistro" >
                 <h3 class="text-warning">Registro</h3>
-                <label for="login">User</label>
+                <label for="login" class="text-primary">User</label>
                 <input type="text" name="login" id="login" ><br>
-                <label for="senha">Password</label>
+                <label for="senha" class="text-primary">Password</label>
                 <input type="password" name="senha" id="senha"/><br/>
-                <label for="email">E-Mail</label>
+                <label for="email" class="text-primary">E-Mail</label>
                 <input type="text" name="email" id="email" ><br>
-                <label for="nickname">@Nickname (used in the game)</label>
+                <label for="nickname" class="text-primary">@Nickname (used in the game)</label>
                 <input type="text" name="nickname" id="nickname" ><br>
                 <input type="submit" value="SIGN IN"/>
             </form>
