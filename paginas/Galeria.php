@@ -11,6 +11,7 @@
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Estilos
   </button>
   <ul class="dropdown-menu">
+  <li><a href="#"> <input type="checkbox" name="all">All <br> </a></li>
   <li><a href="#"> <input type="checkbox" name="Argonian" value="Argonian">Argonian  <br> </a></li> 
 <li><a href="#"> <input type="checkbox" name="Breton" value="Breton">Breton  <br> </a></li> 
 <li><a href="#"> <input type="checkbox" name="Dark Elf" value="Dark Elf">Dark Elf  <br> </a></li> 
@@ -38,7 +39,8 @@
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Categoria
   </button>
   <ul class="dropdown-menu">
-    <li><a href="#"> <input type="checkbox" name="Conservatory" value="Conservatory">Conservatory<br> </a></li> 
+  <li><a href="#"> <input type="checkbox" name="all">All <br> </a></li>
+  <li><a href="#"> <input type="checkbox" name="Conservatory" value="Conservatory">Conservatory<br> </a></li> 
 <li><a href="#"> <input type="checkbox" name="Courtyard" value="Courtyard">Courtyard<br> </a></li> 
 <li><a href="#"> <input type="checkbox" name="Hearth" value="Hearth">Hearth<br> </a></li> 
 <li><a href="#"> <input type="checkbox" name="Dining" value="Dining">Dining<br> </a></li> 
@@ -53,8 +55,12 @@
 <li><a href="#"> <input type="checkbox" name="Workshop" value="Workshop">Workshop<br> </a></li> 
 
   </ul>
+<<<<<<< HEAD
 </div> -->
   
+=======
+</div>
+>>>>>>> a08d83903d99e5cc5eaeec7b1c932f94ed8153c7
     
          <!-- <select name="subcategoria" class="form-control">
         <option value="">Sub-Categoria</option>
