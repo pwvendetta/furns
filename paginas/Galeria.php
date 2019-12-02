@@ -10,7 +10,7 @@
     $con = mysqli_connect('127.0.0.1', 'root', '', 'furns');
     $res = mysqli_query ($con, 'SELECT * FROM movel');
     while ($movel = mysqli_fetch_assoc($res)):?>
-    <img src="<?php echo $movel['imagem']; ?>"  data-tags="<?php echo $movel['estilo'].",".$movel['categoria'].",".$movel['subcategoria'];?>" alt="<?php echo $movel['nome']; ?>" class="imgal-img">
+    <img src="<?php echo $movel['imagem']; ?>"  data-tags="<?php echo $movel['estilo'].",".$movel['categoria'].",".$movel['subcategoria'];?>" alt="<?php echo $movel['nome']; ?>" class="text-primary imgal-img">
   <?php endwhile; ?>
 
 </div>
