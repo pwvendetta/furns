@@ -21,7 +21,7 @@
 
   $('<button/>', {                                 // Create empty button
     text: 'Show All',                              // Add text 'show all'
-    class: 'active',                               // Make it active
+    class: 'active btn btn-secondary',                               // Make it active
     click: function() {                            // Add onclick handler to
       $(this)                                      // Get the clicked on button
         .addClass('active')                        // Add the class of active
@@ -34,6 +34,7 @@
   $.each(tagged, function(tagName) {               // For each tag name
     $('<button/>', {                               // Create empty button
       text: tagName + ' (' + tagged[tagName].length + ')', // Add tag name
+      class: 'btn btn-secondary',
       click: function() {                          // Add click handler
         $(this)                                    // The button clicked on
           .addClass('active')                      // Make clicked item active

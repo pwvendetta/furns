@@ -1,16 +1,16 @@
-@import url(http://fonts.googleapis.com/css?family=Karla:400,700);
+/* @import url(http://fonts.googleapis.com/css?family=Karla:400,700); */
 
-body {
+/* body {
   margin: 0;
   padding: 0;
   background-color: #f1f1f1;
   font-family: 'Karla', sans-serif;
   color: #333;
-}
+} */
 
 /* Header */
 
-header {
+/* header {
   background-color: #333333;
   margin: 0 0 40px 0;
   padding: 10px 0 0 0;
@@ -32,7 +32,7 @@ h4 {
   display: inline-block;
   font-size: 120%;
   margin: 5px 0 5px 0;
-}
+} */
 
 /* Filter and search options */
 
@@ -61,7 +61,7 @@ h4 {
 
 /* Filter buttons */
 
-button {
+/* button {
   background-color: #d7d7d7;
   margin: 5px 2px;
   border: none;
@@ -76,10 +76,10 @@ button:hover, button.active {
   background-color: #4228aa;
   color: #fff;
   cursor: pointer;
-}
+} */
 
 /* Search input */
-
+/* 
 input {
   font-size: 120%;
   border: 1px solid #999;
@@ -91,7 +91,7 @@ input:hover { border: 1px solid #666; }
 input:focus {
   border: 1px solid #00cccc;
   outline: none;
-}
+} */
 
 /* Gallery of images */
 
@@ -114,7 +114,7 @@ input:focus {
 
 /* Table styles */
 
-table {
+/* table {
   margin: 0 auto;
   width: 780px;
 }
@@ -142,10 +142,10 @@ table.sortable th:hover { cursor: pointer; }
 th.ascending, th.descending, table.sortable th:hover {
   background-color: #00cccc;
   color: #fff;
-}
+} */
 
 /* Arrows for table sorting */
-
+/* 
 th.ascending:after {
   font-size: 60%;
   content: '\25B2';
@@ -194,4 +194,4 @@ th.descending:after {
   background-repeat: no-repeat;
   background-position: 60px 1px;
   font-size: 90%;
-}
+} */
