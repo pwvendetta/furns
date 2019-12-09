@@ -8,12 +8,12 @@
     	<div class="bg-light p-3 pr-5">
 
         
-        <table class="display container" id="datatable">
+        <table class="display container" id="">
                 <thead>
                     <tr>
-                        <th>Usuario</th>
-                        <th>Assunto</th>
-                        <th>Mensagem</th>
+                        <th class="m-2 p-2">Usuario</th>
+                        <th class="m-2 p-2">Assunto</th>
+                        <th class="m-2 p-2">Mensagem</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -24,9 +24,9 @@
                         $resU = mysqli_query($con, "SELECT * FROM `usuario` WHERE `idUsuario` ='".$mensagem['idUsuario']."'");
                         $usuario = mysqli_fetch_assoc($resU);
                         ?><tr>
-                        <td><?php echo "@".$usuario['nickname'];?></td>
-                        <td><?php echo $mensagem['assunto'];?></td>
-                        <td><?php echo $mensagem['conteudo'];?></td>
+                        <td class="m-2 p-2"><?php echo "@".$usuario['nickname'];?></td>
+                        <td class="m-2 p-2"><?php echo $mensagem['assunto'];?></td>
+                        <td class="m-2 p-2"><?php echo $mensagem['conteudo'];?></td>
                         <?php endwhile;
                     ?>
                 </tbody>

@@ -13,9 +13,9 @@
     </div>
 
     <div class="col text-center border border-dark bg-dark p-1">
-      <img src="./resources/Images/Items/High-Elf-Tapestry-Alinor-Dawn.jpg" alt="Imagem não Encontrada" height="256px" class="m-0">
+      <img src="./resources/Images/Items/Wood-Elf-Divider-Stretched-768x593.jpg" alt="Imagem não Encontrada" height="256px" class="m-0">
       <p class="m-0 text-primary">Estilo em Destaque:</p>
-      <p class="m-0 text-warning">Alinor</p>
+      <p class="m-0 text-warning">Wood Elf</p>
     </div>
 
     <div class="col">
@@ -37,9 +37,9 @@
     </div>
 
     <div class="col text-center border border-dark bg-dark p-1">
-      <img src="./resources/Images/Items/High-Elf-Meal-Individual.jpg" alt="Imagem não Encontrada" height="256px" class="m-0">
+      <img src="./resources/Images/Items/Wood-Elf-Totem-Skull.jpg" alt="Imagem não Encontrada" height="256px" class="m-0">
       <p class="m-0 text-primary">Item em Destaque:</p>
-      <p class="m-0 text-warning">Alinor Meal, Individual</p>
+      <p class="m-0 text-warning">Wood Elf Totem, Skull</p>
     </div>
 
     <div class="col">

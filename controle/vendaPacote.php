@@ -15,10 +15,9 @@ foreach($_POST as $idPacote => $quantidade) {
     $idPacote = $pacote['idPacote'];
     $insert = "INSERT INTO pacotevenda (idVenda, idPacote,quantidade) VALUES ('$idVenda', '$idPacote', '$quantidade')";
     $insertItemVenda = mysqli_query($con,$insert);
-    $valTotal += $movel['preco'];
+    $valTotal += $pacote['preco'];
   }
   $update = "UPDATE `venda` SET `valor` = '$valTotal' WHERE `venda`.`idVenda` = $idVenda";
   $res = mysqli_query($con, $update);
-
   echo "V";
 ?>

@@ -42,6 +42,7 @@ $con =  mysqli_connect('127.0.0.1', 'root', '', 'furns');
                         </tr>
                         <?php
                         while ($movelVenda = mysqli_fetch_assoc($resMV)):
+                            // if($movelVenda['produto']==0){
                             $resM =  mysqli_query($con, "SELECT * FROM movel WHERE idMovel ='". $movelVenda['idMovel']."'");
                             $movel = mysqli_fetch_assoc($resM);
                         ?>
@@ -54,6 +55,7 @@ $con =  mysqli_connect('127.0.0.1', 'root', '', 'furns');
                         <td></td>
                         </tr>                      
                         <?php
+                        // }
                         endwhile;
                         echo '</form>';
                         }

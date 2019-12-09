@@ -135,7 +135,6 @@ $(document).ready(function () {
   
   $('#btnCalcular').click(function (e) {
     e.preventDefault();
-
     var totalCarrinho = 0;
 
     var totalItens = 0;
@@ -171,7 +170,7 @@ $(document).ready(function () {
         $("#totalPreco").text(totalCarrinho+" Gold");
     });
     if(totalCarrinho == 0){
-    $('#carrinho').html(`<div class="row">
+      $('#carrinho').html(`<div class="row">
           <div class="col-sm">
             <p>Nenhum Item Adicionado</p>
           </div>
