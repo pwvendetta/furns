@@ -1,4 +1,4 @@
-<?php if(!$_SESSION['logado']){?><h4 class="text-primary">É necessário ser o administrador para visualizar os relatorios</h4>
+<?php if(!$_SESSION['admin']){?><h4 class="text-primary">É necessário ser o administrador para visualizar os relatorios</h4>
 <?php }else{
 ?>
 
@@ -21,7 +21,7 @@
                 </thead>
                 <tbody>
                     <?php
-$con =  mysqli_connect('127.0.0.1', 'root', '', 'furns');
+                    $con = conecta();
                     $resV = mysqli_query ($con, 'SELECT * FROM venda ORDER BY idvenda DESC');
                     while ($vendas = mysqli_fetch_assoc($resV)):
                         if($vendas['produto'] == 0){

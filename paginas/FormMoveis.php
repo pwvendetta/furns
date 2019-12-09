@@ -22,7 +22,7 @@
 					<th>Price</th>
 					<th>Edit</th>
 					<th>Delete</th>
-					<th>View</th>
+					<!-- <th>View</th> -->
 
 				</tr>
 			</thead>
@@ -88,71 +88,19 @@
 							<button type='button' class='btn btn-default '> <i class="material-icons">clear</i> </button>
 						</a>
 					</td>
-					<td class="text-center">
+					<!-- <td class="text-center">
 					<a href="#modalImage" rel="modal:open">
 							<button type='button' class='btn btn-default '> <i class="material-icons">visibility</i> </button>
 						</a>
 
-					</td>
+					</td> -->
 
 				</tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 				<?php endwhile; ?>
 			</tbody>
 		</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	</div>
-
-
-
 
 	<br><br><br>
 

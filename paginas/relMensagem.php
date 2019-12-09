@@ -1,4 +1,4 @@
-<?php if(!$_SESSION['logado']){?><h4 class="text-primary">É necessário ser o administrador para visualizar os relatorios</h4>
+<?php if(!$_SESSION['admin']){?><h4 class="text-primary">É necessário ser o administrador para visualizar os relatorios</h4>
 <?php }else{
 ?>
 <div class="container bg-dark pb-3">

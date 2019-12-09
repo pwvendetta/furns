@@ -38,6 +38,7 @@ $movel = mysqli_fetch_assoc($res);
         <option value="	Nord	">	Nord	</option>
         <option value="	Orcish	">	Orcish	</option>
         <option value="	Redguard	">	Redguard	</option>
+        <option value="	Wood Elf	">	Wood Elf	</option>
         <option value="	Imperial	">	Imperial	</option>
         <option value="	Common	">	Common	</option>
         <option value="	Rough	">	Rough	</option>
